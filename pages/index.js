@@ -21,7 +21,7 @@ const styles = {
   },
   section: {
     height: '70vh',
-    backgroundColor: 'black',
+    backgroundColor: 'green',
   }
 };
 
