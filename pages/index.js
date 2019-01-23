@@ -42,7 +42,7 @@ class Index extends React.Component {
     return (
       <Page>
         <div className={classes.root}>
-          <AppBar position="static">
+          <AppBar position="sticky">
             <Toolbar>
               <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
                 <MenuIcon />
