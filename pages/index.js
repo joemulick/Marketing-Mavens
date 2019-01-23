@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import CardMedia from '@material-ui/core/CardMedia';
 
 const styles = {
   root: {
@@ -20,9 +21,11 @@ const styles = {
     marginLeft: -12,
     marginRight: 20,
   },
-  section: {
+  sectionMain: {
+    backgroundColor: 'green'
+  },
+  media: {
     height: '70vh',
-    backgroundColor: 'green',
   }
 };
 
@@ -46,16 +49,20 @@ class Index extends React.Component {
             </Toolbar>
           </AppBar>
 
-          <div className={classes.section}>
-            <Typography variant="h1" color="inherit" className={classes.grow}>
-                News
-            </Typography>
+          <div className={classes.sectionMain}>
+            <CardMedia
+              className={classes.media}
+              image="https://res.cloudinary.com/ddsihrmda/image/upload/v1548226609/carlos-muza-84523-unsplash_kcw88s.jpg"
+              title="Main Splash"
+            />
           </div>
         </div> 
       </Page>
     );
   }
 }
+
+
 
 Index.propTypes = {
   classes: PropTypes.object.isRequired,
