@@ -26,7 +26,12 @@ const styles = {
   },
   media: {
     height: '70vh',
-  }
+    filter: 'brightness(50%)',
+  },  
+  sectionTwo: {
+    backgroundColor: 'green',
+    height: '70vmin',
+  },
 };
 
 class Index extends React.Component {
@@ -55,6 +60,8 @@ class Index extends React.Component {
               image="https://res.cloudinary.com/ddsihrmda/image/upload/v1548226609/carlos-muza-84523-unsplash_kcw88s.jpg"
               title="Main Splash"
             />
+          </div>
+          <div className={classes.sectionTwo}>
           </div>
         </div> 
       </Page>

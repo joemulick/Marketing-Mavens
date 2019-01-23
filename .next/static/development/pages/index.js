@@ -20795,7 +20795,12 @@ var styles = {
     backgroundColor: 'green'
   },
   media: {
-    height: '70vh'
+    height: '70vh',
+    filter: 'brightness(50%)'
+  },
+  sectionTwo: {
+    backgroundColor: 'green',
+    height: '70vmin'
   }
 };
 
@@ -20834,7 +20839,9 @@ function (_React$Component) {
         className: classes.media,
         image: "https://res.cloudinary.com/ddsihrmda/image/upload/v1548226609/carlos-muza-84523-unsplash_kcw88s.jpg",
         title: "Main Splash"
-      }))));
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: classes.sectionTwo
+      })));
     }
   }]);
 
