@@ -9,7 +9,6 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-// import CardMedia from '@material-ui/core/CardMedia';
 
 const styles = {
   root: {
@@ -44,9 +43,15 @@ const styles = {
     backgroundColor: 'rgba(248, 247, 216, 0.7)',
     height: '70vmin',
   },
-
+  mainInnerContainer: {
+    height: '100%',
+    backgroundColor: 'green',
+    opacity: '.5'
+  },
 
 };
+
+//  xs={8} sm={4}
 
 class Index extends React.Component {
 
@@ -70,28 +75,26 @@ class Index extends React.Component {
               </Toolbar>
             </AppBar>
 
-          <Grid className={classes.mainGrid} container spacing={24}>
+          <Grid className={classes.mainGrid} container spacing={8}>
 
+            <Grid className={classes.subGridOne} item xs={12} sm={4}>
+                <div className={classes.mainInnerContainer}>
 
-            <Grid className={classes.subGridOne} item xs>
-                <Typography variant="h6" color="inherit">
-                  Item 1
-                </Typography>
+                </div>
             </Grid>
 
-            <Grid className={classes.subGridTwo} item xs>
-                <Typography variant="h6" color="inherit">
-                  Item 2
-                </Typography>
+            <Grid className={classes.subGridTwo} item xs={12} sm={4}>
+                <div  className={classes.mainInnerContainer}>
+                  
+                </div>
             </Grid>
 
-            <Grid className={classes.subGridThree} item xs>
-                <Typography variant="h6" color="inherit">
-                  Item 3
-                </Typography>
+            <Grid className={classes.subGridThree} item xs={12} sm={4}>
+                <div  className={classes.mainInnerContainer}>
+                  
+                </div>
             </Grid>
-
-          
+     
           </Grid>
       </div> 
     </Page>

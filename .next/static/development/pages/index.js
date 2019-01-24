@@ -21116,7 +21116,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
- // import CardMedia from '@material-ui/core/CardMedia';
 
 var styles = {
   root: {
@@ -21150,8 +21149,13 @@ var styles = {
   subGridThree: {
     backgroundColor: 'rgba(248, 247, 216, 0.7)',
     height: '70vmin'
+  },
+  mainInnerContainer: {
+    height: '100%',
+    backgroundColor: 'green',
+    opacity: '.5'
   }
-};
+}; //  xs={8} sm={4}
 
 var Index =
 /*#__PURE__*/
@@ -21185,29 +21189,29 @@ function (_React$Component) {
       }, "Login"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         className: classes.mainGrid,
         container: true,
-        spacing: 24
+        spacing: 8
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         className: classes.subGridOne,
         item: true,
-        xs: true
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        variant: "h6",
-        color: "inherit"
-      }, "Item 1")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        xs: 12,
+        sm: 4
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: classes.mainInnerContainer
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         className: classes.subGridTwo,
         item: true,
-        xs: true
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        variant: "h6",
-        color: "inherit"
-      }, "Item 2")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        xs: 12,
+        sm: 4
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: classes.mainInnerContainer
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         className: classes.subGridThree,
         item: true,
-        xs: true
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        variant: "h6",
-        color: "inherit"
-      }, "Item 3")))));
+        xs: 12,
+        sm: 4
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: classes.mainInnerContainer
+      })))));
     }
   }]);
 
