@@ -87,8 +87,8 @@ class Index extends React.Component {
               </Toolbar>
             </AppBar>
 
-          <Grid className={classes.mainGrid} container spacing={8}>
-            <Grid className={classes.subGridOne} item xs={12} spacing={24}>
+          <Grid className={classes.mainGrid} container>
+            <Grid className={classes.subGridOne} item xs={12}>
                 <MainFeatures />
             </Grid>    
           </Grid>
