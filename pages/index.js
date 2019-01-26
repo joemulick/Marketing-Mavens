@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import MainFeatures from '../components/MainFeatures';
 
 const styles = {
   root: {
@@ -58,10 +59,11 @@ const styles = {
     backgroundColor: 'green',
     opacity: '.5'
   },
+  divider: {
+    width: '100%',
+  },
 
 };
-
-//  xs={8} sm={4}
 
 class Index extends React.Component {
 
@@ -86,25 +88,9 @@ class Index extends React.Component {
             </AppBar>
 
           <Grid className={classes.mainGrid} container spacing={8}>
-
-            <Grid className={classes.subGridOne} item xs={12} sm={4}>
-                <div className={classes.mainInnerContainerOne}>
-
-                </div>
-            </Grid>
-
-            <Grid className={classes.subGridTwo} item xs={12} sm={4}>
-                <div  className={classes.mainInnerContainerTwo}>
-                  
-                </div>
-            </Grid>
-
-            <Grid className={classes.subGridThree} item xs={12} sm={4}>
-                <div  className={classes.mainInnerContainerThree}>
-                  
-                </div>
-            </Grid>
-     
+            <Grid className={classes.subGridOne} item xs={12} spacing={24}>
+                <MainFeatures />
+            </Grid>    
           </Grid>
       </div> 
     </Page>
