@@ -183,17 +183,20 @@ var styles = {
   card1: {
     margin: '15vh 0% 15vh 10%',
     border: '1px black solid',
-    height: '35vh'
+    minHeight: '35vh'
   },
   card2: {
     margin: '15vh 5% 15vh 5%',
     border: '1px black solid',
-    height: '35vh'
+    minHeight: '35vh'
   },
   card3: {
     margin: '15vh 10% 15vh 0%',
     border: '1px black solid',
-    height: '35vh'
+    minHeight: '35vh'
+  },
+  media: {
+    height: 140
   }
 };
 
@@ -207,7 +210,7 @@ function FormRow(props) {
     className: classes.card1
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_9___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_6___default.a, {
     className: classes.media,
-    image: "/static/images/cards/contemplative-reptile.jpg",
+    image: "https://res.cloudinary.com/ddsihrmda/image/upload/v1548226401/shutterstock_tjrhg5.jpg",
     title: "Contemplative Reptile"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_8___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
     gutterBottom: true,
@@ -229,7 +232,7 @@ function FormRow(props) {
     className: classes.card2
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_9___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_6___default.a, {
     className: classes.media,
-    image: "/static/images/cards/contemplative-reptile.jpg",
+    image: "https://res.cloudinary.com/ddsihrmda/image/upload/v1548226401/shutterstock_tjrhg5.jpg",
     title: "Contemplative Reptile"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_8___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
     gutterBottom: true,
@@ -251,7 +254,7 @@ function FormRow(props) {
     className: classes.card3
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_9___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_6___default.a, {
     className: classes.media,
-    image: "/static/images/cards/contemplative-reptile.jpg",
+    image: "https://res.cloudinary.com/ddsihrmda/image/upload/v1548226401/shutterstock_tjrhg5.jpg",
     title: "Contemplative Reptile"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_8___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
     gutterBottom: true,
