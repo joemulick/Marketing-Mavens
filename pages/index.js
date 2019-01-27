@@ -36,14 +36,6 @@ const styles = {
     backgroundColor: 'rgba(248, 247, 216, 0.7)',
     height: '70vmin',
   },
-  subGridTwo: {
-    backgroundColor: 'rgba(248, 247, 216, 0.7)',
-    height: '70vmin',
-  },
-  subGridThree: {
-    backgroundColor: 'rgba(248, 247, 216, 0.7)',
-    height: '70vmin',
-  },
   mainInnerContainerOne: {
     height: '100%',
     backgroundColor: 'green',
@@ -62,6 +54,14 @@ const styles = {
   divider: {
     width: '100%',
   },
+
+
+  sectionTwoMainContainer: {
+
+  },
+  subGridTwo: {
+
+  }
 
 };
 
@@ -90,6 +90,12 @@ class Index extends React.Component {
           <Grid className={classes.mainGrid} container>
             <Grid className={classes.subGridOne} item xs={12}>
                 <MainFeatures />
+            </Grid>    
+          </Grid>
+
+          <Grid className={classes.sectionTwoMainContainer} container>
+            <Grid className={classes.subGridTwo} >
+
             </Grid>    
           </Grid>
       </div> 

@@ -14,21 +14,24 @@ const styles = {
   card1: {
     margin: '15vh 0% 15vh 10%',
     border: '1px black solid',
-    minHeight: '35vh',
-  },
+    minHeight: '350px',
+  }, 
   card2: {
     margin: '15vh 5% 15vh 5%',
     border: '1px black solid',
-    minHeight: '35vh',
+    minHeight: '350px',
   },
   card3: {
     margin: '15vh 10% 15vh 0%',
     border: '1px black solid',
-    minHeight: '35vh',
+    minHeight: '350px',
   },
   media: {
     height: 140,
   },
+  cardText: {
+    height: '163px',
+  }
 };
 
 function FormRow(props) {
@@ -36,7 +39,7 @@ function FormRow(props) {
 
   return (
     <React.Fragment>
-        <Grid item xs={12} sm={4}>
+        <Grid item sm={12} md={4}>
               <Card className={classes.card1}>
                 <CardActionArea>
                   <CardMedia
@@ -44,13 +47,14 @@ function FormRow(props) {
                     image="https://res.cloudinary.com/ddsihrmda/image/upload/v1548226401/shutterstock_tjrhg5.jpg"
                     title="Contemplative Reptile"
                   />
-                  <CardContent>
+                  <CardContent className={classes.cardText}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Lizard
                     </Typography>
                     <Typography component="p">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                      across all continents except Antarctica
+                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                        across all continents except Antarctica. Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                        across all continents except Antarctica
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -62,11 +66,10 @@ function FormRow(props) {
                         Learn More
                       </Button>
                 </CardActions>
-
             </Card>
         </Grid>
 
-        <Grid item xs={12} sm={4}>
+        <Grid item sm={12} md={4}>
             <Card className={classes.card2}>
                 <CardActionArea>
                   <CardMedia
@@ -74,12 +77,14 @@ function FormRow(props) {
                     image="https://res.cloudinary.com/ddsihrmda/image/upload/v1548226401/shutterstock_tjrhg5.jpg"
                     title="Contemplative Reptile"
                   />
-                  <CardContent>
+                  <CardContent className={classes.cardText}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Lizard
                     </Typography>
                     <Typography component="p">
                       Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                      across all continents except Antarctica.Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                      across all continents except Antarctica .Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                       across all continents except Antarctica
                     </Typography>
                   </CardContent>
@@ -95,7 +100,7 @@ function FormRow(props) {
             </Card>
         </Grid>
 
-        <Grid item xs={12} sm={4}>
+        <Grid item sm={12} md={4}>
             <Card className={classes.card3}>
                 <CardActionArea>
                   <CardMedia
@@ -103,7 +108,7 @@ function FormRow(props) {
                     image="https://res.cloudinary.com/ddsihrmda/image/upload/v1548226401/shutterstock_tjrhg5.jpg"
                     title="Contemplative Reptile"
                   />
-                  <CardContent>
+                  <CardContent className={classes.cardText}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Lizard
                     </Typography>
