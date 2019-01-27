@@ -10,13 +10,14 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import MainFeatures from '../components/MainFeatures';
+import ServicesSection from '../components/ServicesSection';
 
 const styles = {
   root: {
     flexGrow: 1,
   },
   mainGrid: {
-    height: '70vmin',
+    minHeight: '70vmin',
     width: 'auto',
     background:'url(https://res.cloudinary.com/ddsihrmda/image/upload/v1548226609/carlos-muza-84523-unsplash_kcw88s.jpg) no-repeat center center fixed',
     position: 'relative',
@@ -34,7 +35,7 @@ const styles = {
   },
   subGridOne: {
     backgroundColor: 'rgba(248, 247, 216, 0.7)',
-    height: '70vmin',
+    minHeight: '70vmin',
   },
   mainInnerContainerOne: {
     height: '100%',
@@ -51,18 +52,6 @@ const styles = {
     backgroundColor: 'green',
     opacity: '.5'
   },
-  divider: {
-    width: '100%',
-  },
-
-
-  sectionTwoMainContainer: {
-
-  },
-  subGridTwo: {
-
-  }
-
 };
 
 class Index extends React.Component {
@@ -80,7 +69,7 @@ class Index extends React.Component {
                 <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
                   <MenuIcon />
                 </IconButton>
-                <Typography variant="h6" color="inherit" className={classes.grow}>
+                <Typography variant="h6" color="inherit">
                   News
                 </Typography>
                 <Button color="inherit">Login</Button>
@@ -93,11 +82,9 @@ class Index extends React.Component {
             </Grid>    
           </Grid>
 
-          <Grid className={classes.sectionTwoMainContainer} container>
-            <Grid className={classes.subGridTwo} >
 
-            </Grid>    
-          </Grid>
+          <ServicesSection />
+         
       </div> 
     </Page>
     );
