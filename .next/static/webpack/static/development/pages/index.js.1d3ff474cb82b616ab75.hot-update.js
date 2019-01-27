@@ -46,20 +46,23 @@ var styles = {
   card1: {
     margin: '15vh 0% 15vh 10%',
     border: '1px black solid',
-    height: '35vh'
+    minHeight: '35vh'
   },
   card2: {
     margin: '15vh 5% 15vh 5%',
     border: '1px black solid',
-    height: '35vh'
+    minHeight: '35vh'
   },
   card3: {
     margin: '15vh 10% 15vh 0%',
     border: '1px black solid',
-    height: '35vh'
+    minHeight: '35vh'
   },
   media: {
     height: 140
+  },
+  fullCardHeight: {
+    height: '100%'
   }
 };
 
@@ -161,4 +164,4 @@ MainFeatures.propTypes = {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.a62519908b59f546219b.hot-update.js.map
+//# sourceMappingURL=index.js.1d3ff474cb82b616ab75.hot-update.js.map

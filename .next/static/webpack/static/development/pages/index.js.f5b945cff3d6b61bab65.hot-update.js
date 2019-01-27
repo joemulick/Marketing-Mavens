@@ -46,7 +46,7 @@ var styles = {
   card1: {
     margin: '15vh 0% 15vh 10%',
     border: '1px black solid',
-    height: '35vh'
+    minHeight: '35vh'
   },
   card2: {
     margin: '15vh 5% 15vh 5%',
@@ -60,6 +60,9 @@ var styles = {
   },
   media: {
     height: 140
+  },
+  fullCardHeight: {
+    height: '100%'
   }
 };
 
@@ -125,7 +128,9 @@ function FormRow(props) {
     component: "h2"
   }, "Lizard"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
     component: "p"
-  }, "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_7___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    className: classes.buttonBottom
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
     size: "small",
     color: "primary"
   }, "Share"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -161,4 +166,4 @@ MainFeatures.propTypes = {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.a86390c539188a439ef7.hot-update.js.map
+//# sourceMappingURL=index.js.f5b945cff3d6b61bab65.hot-update.js.map
