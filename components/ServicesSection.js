@@ -10,6 +10,7 @@ import ServiceModalThree from './serviceModals/ServiceModalThree';
 import ServiceModalFour from './serviceModals/ServiceModalFour';
 import ServiceModalFive from './serviceModals/ServiceModalFive';
 import ServiceModalSix from './serviceModals/ServiceModalSix';
+import SvgIcon from '@material-ui/core/SvgIcon';
 
 const styles = {
     sectionTwoMainContainerHead: {
@@ -32,7 +33,24 @@ const styles = {
     sectionTwoInnerContainerMainText: {
         height: '450px',
     },
+    icon: {
+        margin: 'theme.spacing.unit * 2',
+      },
+      iconHover: {
+        margin: 'theme.spacing.unit * 2',
+        '&:hover': {
+          color: 'red[800]',
+        },
+      },
 };
+
+function IconOne(props) {
+    return (
+      <SvgIcon {...props}>
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+      </SvgIcon>
+    );
+  }
 
 class ServicesSection extends React.Component {
 
@@ -108,20 +126,28 @@ class ServicesSection extends React.Component {
                 <Grid className={classes.sectionTwoMainContainer} container spacing={8}>
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                         <div>
-                            <Typography variant="subtitle1"></Typography>
-                            <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenOne}>
-                            Open simple dialog
-                            </Button>
-                            <ServiceModalOne
-                            open={this.state.openOne}
-                            onClose={this.handleCloseOne}
-                            />
+                            <div>
+                                <IconOne className={classes.icon} color="secondary" />
+                            </div>
+                            <div>
+                                <Typography variant="subtitle1"></Typography>
+                                <Typography variant="subtitle1"></Typography>
+
+                                <br />
+
+                                <Button variant="outlined" color="primary" onClick={this.handleClickOpenOne}>
+                                Open simple dialog
+                                </Button>
+                                <ServiceModalOne
+                                open={this.state.openOne}
+                                onClose={this.handleCloseOne}
+                                />
+                            </div>
                         </div>
                     </Grid> 
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                         <div>
-                            <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
+                            <Typography variant="subtitle1"></Typography>
                             <br />
                             <Button variant="outlined" color="primary" onClick={this.handleClickOpenTwo}>
                             Open simple dialog
@@ -134,7 +160,7 @@ class ServicesSection extends React.Component {
                     </Grid> 
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                         <div>
-                            <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
+                            <Typography variant="subtitle1"></Typography>
                             <br />
                             <Button variant="outlined" color="primary" onClick={this.handleClickOpenThree}>
                             Open simple dialog
@@ -149,7 +175,7 @@ class ServicesSection extends React.Component {
                     {/*/////////////////// Second Row ///////////////////////////// */} 
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                         <div>
-                            <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
+                            <Typography variant="subtitle1"></Typography>
                             <br />
                             <Button variant="outlined" color="primary" onClick={this.handleClickOpenFour}>
                             Open simple dialog
@@ -162,7 +188,7 @@ class ServicesSection extends React.Component {
                     </Grid> 
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                         <div>
-                            <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
+                            <Typography variant="subtitle1"></Typography>
                             <br />
                             <Button variant="outlined" color="primary" onClick={this.handleClickOpenFive}>
                             Open simple dialog
@@ -175,7 +201,7 @@ class ServicesSection extends React.Component {
                     </Grid> 
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                     <div>
-                            <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
+                            <Typography variant="subtitle1"></Typography>
                             <br />
                             <Button variant="outlined" color="primary" onClick={this.handleClickOpenSix}>
                             Open simple dialog
@@ -203,6 +229,7 @@ class ServicesSection extends React.Component {
 
 ServicesSection.propTypes = {
     classes: PropTypes.object.isRequired,
-  };
+};
+
   
   export default withStyles(styles)(ServicesSection);
