@@ -11,6 +11,7 @@ import ServiceModalFour from './serviceModals/ServiceModalFour';
 import ServiceModalFive from './serviceModals/ServiceModalFive';
 import ServiceModalSix from './serviceModals/ServiceModalSix';
 import SvgIcon from '@material-ui/core/SvgIcon';
+import ButtonBase from '@material-ui/core/ButtonBase';
 
 const styles = {
     sectionTwoMainContainerHead: {
@@ -25,6 +26,7 @@ const styles = {
         backgroundColor: 'rgba(248, 247, 216, 0.7)',
         height: '200px',
         border: '1px black solid',
+        flexWrap: 'nowrap',
     },
     sectionTwoMainContainer: {
         width: 'auto',
@@ -125,92 +127,192 @@ class ServicesSection extends React.Component {
                 </Grid>
                 <Grid className={classes.sectionTwoMainContainer} container spacing={8}>
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
-                        <div>
-                            <div>
-                                <IconOne className={classes.icon} color="secondary" />
-                            </div>
-                            <div>
-                                <Typography variant="subtitle1"></Typography>
-                                <Typography variant="subtitle1"></Typography>
-
-                                <br />
-
+                      <Grid container spacing={16}>
+                        <Grid item>
+                          <ButtonBase className={classes.image}>
+                            <IconOne className={classes.icon} color="secondary" />
+                          </ButtonBase>
+                        </Grid>
+                        <Grid item xs={12} sm container>
+                          <Grid item xs container direction="column" spacing={16}>
+                            <Grid item xs>
+                              <Typography gutterBottom variant="subtitle1">
+                                Standard license
+                              </Typography>
+                              <Typography gutterBottom>Full resolution 1920x1080 • JPEG</Typography>
+                            </Grid>
+                            <Grid item>
+                              <Typography style={{ cursor: 'pointer' }}>Remove</Typography>
+                            </Grid>
+                          </Grid>
+                          <Grid item>
                                 <Button variant="outlined" color="primary" onClick={this.handleClickOpenOne}>
-                                Open simple dialog
-                                </Button>
-                                <ServiceModalOne
-                                open={this.state.openOne}
-                                onClose={this.handleCloseOne}
+                                  Open simple dialog
+                                  </Button>
+                                  <ServiceModalOne
+                                  open={this.state.openOne}
+                                  onClose={this.handleCloseOne}
                                 />
-                            </div>
-                        </div>
+                          </Grid>
+                        </Grid>
+                      </Grid>
                     </Grid> 
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
-                        <div>
-                            <Typography variant="subtitle1"></Typography>
-                            <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenTwo}>
-                            Open simple dialog
-                            </Button>
-                            <ServiceModalTwo
-                            open={this.state.openTwo}
-                            onClose={this.handleCloseTwo}
-                            />
-                        </div>
+                    <Grid container spacing={16}>
+                        <Grid item>
+                          <ButtonBase className={classes.image}>
+                            <IconOne className={classes.icon} color="secondary" />
+                          </ButtonBase>
+                        </Grid>
+                        <Grid item xs={12} sm container>
+                          <Grid item xs container direction="column" spacing={16}>
+                            <Grid item xs>
+                              <Typography gutterBottom variant="subtitle1">
+                                Standard license
+                              </Typography>
+                              <Typography gutterBottom>Full resolution 1920x1080 • JPEG</Typography>
+                            </Grid>
+                            <Grid item>
+                              <Typography style={{ cursor: 'pointer' }}>Remove</Typography>
+                            </Grid>
+                          </Grid>
+                          <Grid item>
+                                <Button variant="outlined" color="primary" onClick={this.handleClickOpenTwo}>
+                                  Open simple dialog
+                                  </Button>
+                                  <ServiceModalTwo
+                                  open={this.state.openTwo}
+                                  onClose={this.handleCloseTwo}
+                                />
+                          </Grid>
+                        </Grid>
+                      </Grid>
                     </Grid> 
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
-                        <div>
-                            <Typography variant="subtitle1"></Typography>
-                            <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenThree}>
-                            Open simple dialog
-                            </Button>
-                            <ServiceModalThree
-                            open={this.state.openThree}
-                            onClose={this.handleCloseThree}
-                            />
-                        </div>
+                    <Grid container spacing={16}>
+                        <Grid item>
+                          <ButtonBase className={classes.image}>
+                            <IconOne className={classes.icon} color="secondary" />
+                          </ButtonBase>
+                        </Grid>
+                        <Grid item xs={12} sm container>
+                          <Grid item xs container direction="column" spacing={16}>
+                            <Grid item xs>
+                              <Typography gutterBottom variant="subtitle1">
+                                Standard license
+                              </Typography>
+                              <Typography gutterBottom>Full resolution 1920x1080 • JPEG</Typography>
+                            </Grid>
+                            <Grid item>
+                              <Typography style={{ cursor: 'pointer' }}>Remove</Typography>
+                            </Grid>
+                          </Grid>
+                          <Grid item>
+                                <Button variant="outlined" color="primary" onClick={this.handleClickOpenThree}>
+                                  Open simple dialog
+                                  </Button>
+                                  <ServiceModalThree
+                                  open={this.state.openThree}
+                                  onClose={this.handleCloseThree}
+                                />
+                          </Grid>
+                        </Grid>
+                      </Grid>
                     </Grid>
                     {/*/////////////////// Second Row ///////////////////////////// */}
                     {/*/////////////////// Second Row ///////////////////////////// */} 
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
-                        <div>
-                            <Typography variant="subtitle1"></Typography>
-                            <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenFour}>
-                            Open simple dialog
-                            </Button>
-                            <ServiceModalFour
-                            open={this.state.openFour}
-                            onClose={this.handleCloseFour}
-                            />
-                        </div>
+                    <Grid container spacing={16}>
+                        <Grid item>
+                          <ButtonBase className={classes.image}>
+                            <IconOne className={classes.icon} color="secondary" />
+                          </ButtonBase>
+                        </Grid>
+                        <Grid item xs={12} sm container>
+                          <Grid item xs container direction="column" spacing={16}>
+                            <Grid item xs>
+                              <Typography gutterBottom variant="subtitle1">
+                                Standard license
+                              </Typography>
+                              <Typography gutterBottom>Full resolution 1920x1080 • JPEG</Typography>
+                            </Grid>
+                            <Grid item>
+                              <Typography style={{ cursor: 'pointer' }}>Remove</Typography>
+                            </Grid>
+                          </Grid>
+                          <Grid item>
+                                <Button variant="outlined" color="primary" onClick={this.handleClickOpenFour}>
+                                  Open simple dialog
+                                  </Button>
+                                  <ServiceModalFour
+                                  open={this.state.openFour}
+                                  onClose={this.handleCloseFour}
+                                />
+                          </Grid>
+                        </Grid>
+                      </Grid>
                     </Grid> 
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
-                        <div>
-                            <Typography variant="subtitle1"></Typography>
-                            <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenFive}>
-                            Open simple dialog
-                            </Button>
-                            <ServiceModalFive
-                            open={this.state.openFive}
-                            onClose={this.handleCloseFive}
-                            />
-                        </div>
+                    <Grid container spacing={16}>
+                        <Grid item>
+                          <ButtonBase className={classes.image}>
+                            <IconOne className={classes.icon} color="secondary" />
+                          </ButtonBase>
+                        </Grid>
+                        <Grid item xs={12} sm container>
+                          <Grid item xs container direction="column" spacing={16}>
+                            <Grid item xs>
+                              <Typography gutterBottom variant="subtitle1">
+                                Standard license
+                              </Typography>
+                              <Typography gutterBottom>Full resolution 1920x1080 • JPEG</Typography>
+                            </Grid>
+                            <Grid item>
+                              <Typography style={{ cursor: 'pointer' }}>Remove</Typography>
+                            </Grid>
+                          </Grid>
+                          <Grid item>
+                                <Button variant="outlined" color="primary" onClick={this.handleClickOpenFive}>
+                                  Open simple dialog
+                                  </Button>
+                                  <ServiceModalFive
+                                  open={this.state.openFive}
+                                  onClose={this.handleCloseFive}
+                                />
+                          </Grid>
+                        </Grid>
+                      </Grid>
                     </Grid> 
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
-                    <div>
-                            <Typography variant="subtitle1"></Typography>
-                            <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenSix}>
-                            Open simple dialog
-                            </Button>
-                            <ServiceModalSix
-                            open={this.state.openSix}
-                            onClose={this.handleCloseSix}
-                            />
-                        </div>
+                    <Grid container spacing={16}>
+                        <Grid item>
+                          <ButtonBase className={classes.image}>
+                            <IconOne className={classes.icon} color="secondary" />
+                          </ButtonBase>
+                        </Grid>
+                        <Grid item xs={12} sm container>
+                          <Grid item xs container direction="column" spacing={16}>
+                            <Grid item xs>
+                              <Typography gutterBottom variant="subtitle1">
+                                Standard license
+                              </Typography>
+                              <Typography gutterBottom>Full resolution 1920x1080 • JPEG</Typography>
+                            </Grid>
+                            <Grid item>
+                              <Typography style={{ cursor: 'pointer' }}>Remove</Typography>
+                            </Grid>
+                          </Grid>
+                          <Grid item>
+                                <Button variant="outlined" color="primary" onClick={this.handleClickOpenSix}>
+                                  Open simple dialog
+                                  </Button>
+                                  <ServiceModalSix
+                                  open={this.state.openSix}
+                                  onClose={this.handleCloseSix}
+                                />
+                          </Grid>
+                        </Grid>
+                      </Grid>
                     </Grid>
                     {/*/////////// Main Text Section Below Services Tile Set ///////////*/}
                     {/*/////////// Main Text Section Below Services Tile Set ///////////*/}
