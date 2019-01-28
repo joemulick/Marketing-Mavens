@@ -314,7 +314,12 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(ServicesSection)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
-      open: false
+      openOne: false,
+      openTwo: false,
+      openThree: false,
+      openFour: false,
+      openFive: false,
+      openSix: false
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleClickOpenOne", function () {
@@ -353,44 +358,44 @@ function (_React$Component) {
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseOne", function (value) {
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseOne", function (valueOne) {
       _this.setState({
-        selectedValue: value,
+        selectedValue: valueOne,
         openOne: false
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseTwo", function (value) {
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseTwo", function (valueTwo) {
       _this.setState({
-        selectedValue: value,
+        selectedValue: valueTwo,
         openTwo: false
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseThree", function (value) {
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseThree", function (valueThree) {
       _this.setState({
-        selectedValue: value,
+        selectedValue: valueThree,
         openThree: false
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseFour", function (value) {
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseFour", function (valueFour) {
       _this.setState({
-        selectedValue: value,
+        selectedValue: valueFour,
         openFour: false
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseFive", function (value) {
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseFive", function (valueFive) {
       _this.setState({
-        selectedValue: value,
+        selectedValue: valueFive,
         openFive: false
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseSix", function (value) {
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseSix", function (valueSix) {
       _this.setState({
-        selectedValue: value,
+        selectedValue: valueSix,
         openSix: false
       });
     });
@@ -958,8 +963,8 @@ function (_React$Component) {
       _this.props.onClose(_this.props.selectedValue);
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleListItemClick", function (value) {
-      _this.props.onClose(value);
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleListItemClick", function (valueOne) {
+      _this.props.onClose(valueOne);
     });
 
     return _this;

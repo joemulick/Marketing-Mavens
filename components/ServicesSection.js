@@ -38,7 +38,12 @@ const styles = {
 class ServicesSection extends React.Component {
 
     state = {
-        open: false,
+        openOne: false,
+        openTwo: false,
+        openThree: false,
+        openFour: false,
+        openFive: false,
+        openSix: false,
       };
     
       handleClickOpenOne = () => {
@@ -72,23 +77,23 @@ class ServicesSection extends React.Component {
         });
       };
     
-      handleCloseOne = value => {
-        this.setState({ selectedValue: value, openOne: false });
+      handleCloseOne = valueOne => {
+        this.setState({ selectedValue: valueOne, openOne: false });
       };
-      handleCloseTwo = value => {
-        this.setState({ selectedValue: value, openTwo: false });
+      handleCloseTwo = valueTwo => {
+        this.setState({ selectedValue: valueTwo, openTwo: false });
       };
-      handleCloseThree = value => {
-        this.setState({ selectedValue: value, openThree: false });
+      handleCloseThree = valueThree => {
+        this.setState({ selectedValue: valueThree, openThree: false });
       };
-      handleCloseFour = value => {
-        this.setState({ selectedValue: value, openFour: false });
+      handleCloseFour = valueFour => {
+        this.setState({ selectedValue: valueFour, openFour: false });
       };
-      handleCloseFive = value => {
-        this.setState({ selectedValue: value, openFive: false });
+      handleCloseFive = valueFive => {
+        this.setState({ selectedValue: valueFive, openFive: false });
       };
-      handleCloseSix = value => {
-        this.setState({ selectedValue: value, openSix: false });
+      handleCloseSix = valueSix => {
+        this.setState({ selectedValue: valueSix, openSix: false });
       };
 
     render() {

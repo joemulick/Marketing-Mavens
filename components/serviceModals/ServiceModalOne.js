@@ -32,8 +32,8 @@ class ServiceModalOne extends React.Component {
         this.props.onClose(this.props.selectedValue);
       };
     
-      handleListItemClick = value => {
-        this.props.onClose(value);
+      handleListItemClick = valueOne => {
+        this.props.onClose(valueOne);
       };
     
     render() {
