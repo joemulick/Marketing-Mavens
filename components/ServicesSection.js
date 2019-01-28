@@ -5,7 +5,12 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
-import ServiceModalOne from './ServiceModalOne';
+import ServiceModalOne from './serviceModals/ServiceModalOne';
+import ServiceModalTwo from './serviceModals/ServiceModalTwo';
+import ServiceModalThree from './serviceModals/ServiceModalThree';
+import ServiceModalFour from './serviceModals/ServiceModalFour';
+import ServiceModalFive from './serviceModals/ServiceModalFive';
+import ServiceModalSix from './serviceModals/ServiceModalSix';
 
 const styles = {
     sectionTwoMainContainerHead: {
@@ -36,14 +41,54 @@ class ServicesSection extends React.Component {
         open: false,
       };
     
-      handleClickOpen = () => {
+      handleClickOpenOne = () => {
         this.setState({
-          open: true,
+          openOne: true,
+        });
+      };
+      handleClickOpenTwo = () => {
+        this.setState({
+          openTwo: true,
+        });
+      };
+      handleClickOpenThree = () => {
+        this.setState({
+          openThree: true,
+        });
+      };
+      handleClickOpenFour = () => {
+        this.setState({
+          openFour: true,
+        });
+      };
+      handleClickOpenFive = () => {
+        this.setState({
+          openFive: true,
+        });
+      };
+      handleClickOpenSix = () => {
+        this.setState({
+          openSix: true,
         });
       };
     
-      handleClose = value => {
-        this.setState({ selectedValue: value, open: false });
+      handleCloseOne = value => {
+        this.setState({ selectedValue: value, openOne: false });
+      };
+      handleCloseTwo = value => {
+        this.setState({ selectedValue: value, openTwo: false });
+      };
+      handleCloseThree = value => {
+        this.setState({ selectedValue: value, openThree: false });
+      };
+      handleCloseFour = value => {
+        this.setState({ selectedValue: value, openFour: false });
+      };
+      handleCloseFive = value => {
+        this.setState({ selectedValue: value, openFive: false });
+      };
+      handleCloseSix = value => {
+        this.setState({ selectedValue: value, openSix: false });
       };
 
     render() {
@@ -61,13 +106,13 @@ class ServicesSection extends React.Component {
                         <div>
                             <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
                             <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
+                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenOne}>
                             Open simple dialog
                             </Button>
                             <ServiceModalOne
                             selectedValue={this.state.selectedValue}
-                            open={this.state.open}
-                            onClose={this.handleClose}
+                            open={this.state.openOne}
+                            onClose={this.handleCloseOne}
                             />
                         </div>
                     </Grid> 
@@ -75,13 +120,13 @@ class ServicesSection extends React.Component {
                         <div>
                             <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
                             <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
+                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenTwo}>
                             Open simple dialog
                             </Button>
-                            <ServiceModalOne
+                            <ServiceModalTwo
                             selectedValue={this.state.selectedValue}
-                            open={this.state.open}
-                            onClose={this.handleClose}
+                            open={this.state.openTwo}
+                            onClose={this.handleCloseTwo}
                             />
                         </div>
                     </Grid> 
@@ -89,13 +134,13 @@ class ServicesSection extends React.Component {
                         <div>
                             <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
                             <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
+                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenThree}>
                             Open simple dialog
                             </Button>
-                            <ServiceModalOne
+                            <ServiceModalThree
                             selectedValue={this.state.selectedValue}
-                            open={this.state.open}
-                            onClose={this.handleClose}
+                            open={this.state.openThree}
+                            onClose={this.handleCloseThree}
                             />
                         </div>
                     </Grid>
@@ -105,13 +150,13 @@ class ServicesSection extends React.Component {
                         <div>
                             <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
                             <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
+                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenFour}>
                             Open simple dialog
                             </Button>
-                            <ServiceModalOne
+                            <ServiceModalFour
                             selectedValue={this.state.selectedValue}
-                            open={this.state.open}
-                            onClose={this.handleClose}
+                            open={this.state.openFour}
+                            onClose={this.handleCloseFour}
                             />
                         </div>
                     </Grid> 
@@ -119,13 +164,13 @@ class ServicesSection extends React.Component {
                         <div>
                             <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
                             <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
+                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenFive}>
                             Open simple dialog
                             </Button>
-                            <ServiceModalOne
+                            <ServiceModalFive
                             selectedValue={this.state.selectedValue}
-                            open={this.state.open}
-                            onClose={this.handleClose}
+                            open={this.state.openFive}
+                            onClose={this.handleCloseFive}
                             />
                         </div>
                     </Grid> 
@@ -133,13 +178,13 @@ class ServicesSection extends React.Component {
                     <div>
                             <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
                             <br />
-                            <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
+                            <Button variant="outlined" color="primary" onClick={this.handleClickOpenSix}>
                             Open simple dialog
                             </Button>
-                            <ServiceModalOne
+                            <ServiceModalSix
                             selectedValue={this.state.selectedValue}
-                            open={this.state.open}
-                            onClose={this.handleClose}
+                            open={this.state.openSix}
+                            onClose={this.handleCloseSix}
                             />
                         </div>
                     </Grid>
