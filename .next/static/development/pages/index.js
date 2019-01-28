@@ -357,42 +357,36 @@ function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseOne", function (valueOne) {
       _this.setState({
-        selectedValue: valueOne,
         openOne: false
       });
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseTwo", function (valueTwo) {
       _this.setState({
-        selectedValue: valueTwo,
         openTwo: false
       });
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseThree", function (valueThree) {
       _this.setState({
-        selectedValue: valueThree,
         openThree: false
       });
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseFour", function (valueFour) {
       _this.setState({
-        selectedValue: valueFour,
         openFour: false
       });
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseFive", function (valueFive) {
       _this.setState({
-        selectedValue: valueFive,
         openFive: false
       });
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleCloseSix", function (valueSix) {
       _this.setState({
-        selectedValue: valueSix,
         openSix: false
       });
     });
@@ -428,12 +422,11 @@ function (_React$Component) {
         md: 4
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         variant: "subtitle1"
-      }, "Selected: ", this.state.selectedValue), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
         variant: "outlined",
         color: "primary",
         onClick: this.handleClickOpenOne
       }, "Open simple dialog"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalOne__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        selectedValue: this.state.selectedValue,
         open: this.state.openOne,
         onClose: this.handleCloseOne
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -448,7 +441,6 @@ function (_React$Component) {
         color: "primary",
         onClick: this.handleClickOpenTwo
       }, "Open simple dialog"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalTwo__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        selectedValue: this.state.selectedValue,
         open: this.state.openTwo,
         onClose: this.handleCloseTwo
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -463,7 +455,6 @@ function (_React$Component) {
         color: "primary",
         onClick: this.handleClickOpenThree
       }, "Open simple dialog"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalThree__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        selectedValue: this.state.selectedValue,
         open: this.state.openThree,
         onClose: this.handleCloseThree
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -478,7 +469,6 @@ function (_React$Component) {
         color: "primary",
         onClick: this.handleClickOpenFour
       }, "Open simple dialog"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalFour__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        selectedValue: this.state.selectedValue,
         open: this.state.openFour,
         onClose: this.handleCloseFour
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -493,7 +483,6 @@ function (_React$Component) {
         color: "primary",
         onClick: this.handleClickOpenFive
       }, "Open simple dialog"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalFive__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        selectedValue: this.state.selectedValue,
         open: this.state.openFive,
         onClose: this.handleCloseFive
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -508,7 +497,6 @@ function (_React$Component) {
         color: "primary",
         onClick: this.handleClickOpenSix
       }, "Open simple dialog"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalSix__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        selectedValue: this.state.selectedValue,
         open: this.state.openSix,
         onClose: this.handleCloseSix
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {

@@ -77,22 +77,22 @@ class ServicesSection extends React.Component {
       };
     
       handleCloseOne = valueOne => {
-        this.setState({ selectedValue: valueOne, openOne: false });
+        this.setState({ openOne: false });
       };
       handleCloseTwo = valueTwo => {
-        this.setState({ selectedValue: valueTwo, openTwo: false });
+        this.setState({ openTwo: false });
       };
       handleCloseThree = valueThree => {
-        this.setState({ selectedValue: valueThree, openThree: false });
+        this.setState({ openThree: false });
       };
       handleCloseFour = valueFour => {
-        this.setState({ selectedValue: valueFour, openFour: false });
+        this.setState({ openFour: false });
       };
       handleCloseFive = valueFive => {
-        this.setState({ selectedValue: valueFive, openFive: false });
+        this.setState({ openFive: false });
       };
       handleCloseSix = valueSix => {
-        this.setState({ selectedValue: valueSix, openSix: false });
+        this.setState({ openSix: false });
       };
 
     render() {
@@ -108,13 +108,12 @@ class ServicesSection extends React.Component {
                 <Grid className={classes.sectionTwoMainContainer} container spacing={8}>
                     <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                         <div>
-                            <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
+                            <Typography variant="subtitle1"></Typography>
                             <br />
                             <Button variant="outlined" color="primary" onClick={this.handleClickOpenOne}>
                             Open simple dialog
                             </Button>
                             <ServiceModalOne
-                            selectedValue={this.state.selectedValue}
                             open={this.state.openOne}
                             onClose={this.handleCloseOne}
                             />
@@ -128,7 +127,6 @@ class ServicesSection extends React.Component {
                             Open simple dialog
                             </Button>
                             <ServiceModalTwo
-                            selectedValue={this.state.selectedValue}
                             open={this.state.openTwo}
                             onClose={this.handleCloseTwo}
                             />
@@ -142,7 +140,6 @@ class ServicesSection extends React.Component {
                             Open simple dialog
                             </Button>
                             <ServiceModalThree
-                            selectedValue={this.state.selectedValue}
                             open={this.state.openThree}
                             onClose={this.handleCloseThree}
                             />
@@ -158,7 +155,6 @@ class ServicesSection extends React.Component {
                             Open simple dialog
                             </Button>
                             <ServiceModalFour
-                            selectedValue={this.state.selectedValue}
                             open={this.state.openFour}
                             onClose={this.handleCloseFour}
                             />
@@ -172,7 +168,6 @@ class ServicesSection extends React.Component {
                             Open simple dialog
                             </Button>
                             <ServiceModalFive
-                            selectedValue={this.state.selectedValue}
                             open={this.state.openFive}
                             onClose={this.handleCloseFive}
                             />
@@ -186,7 +181,6 @@ class ServicesSection extends React.Component {
                             Open simple dialog
                             </Button>
                             <ServiceModalSix
-                            selectedValue={this.state.selectedValue}
                             open={this.state.openSix}
                             onClose={this.handleCloseSix}
                             />

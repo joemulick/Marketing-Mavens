@@ -28,7 +28,7 @@ const styles = {
 
 
 class ServiceModalOne extends React.Component {
-    handleClose = () => {
+      handleClose = () => {
         this.props.onClose(this.props.selectedValue);
       };
     
