@@ -11,6 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import MainFeatures from '../components/MainFeatures';
 import ServicesSection from '../components/ServicesSection';
+import OurServicesAndForm from '../components/OurServicesAndForm';
 
 const styles = {
   root: {
@@ -84,6 +85,9 @@ class Index extends React.Component {
 
 
           <ServicesSection />
+
+          <OurServicesAndForm />
+
          
       </div> 
     </Page>

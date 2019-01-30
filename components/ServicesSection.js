@@ -23,10 +23,8 @@ const styles = {
   },
   sectionTwoMainContainerHead: {
       background:'#fff2e6',
-      height: '100px',
+      height: '125px',
       width: 'auto',
-      display: 'flex',
-      alignContent: 'center',
   },
   // sectionTwoInnerContainerHead: {
 
@@ -58,12 +56,11 @@ const styles = {
       justifyContent: 'center',
       width: '25%',
   },
-  innerGridHeightAdjustTwoText: {
-      
+  sectionThreeMainContainerHead: {
+    backgroundColor: 'rgba(248, 247, 216, 0.7)',
+    height: '200px',
+    border: '1px grey dotted',
   },
-  iconActionBox: {
-    
-  }
 };
 
 
@@ -321,13 +318,13 @@ class ServicesSection extends React.Component {
                     </Grid>
                   </Grid>
                   {/*/////////// Main Text Section Below Services Tile Set ///////////*/}
-                  {/*/////////// Main Text Section Below Services Tile Set ///////////*/}
-                  <Grid className={classes.sectionTwoMainContainerHead} container justify="center">
-                    <Typography style={{ margin: 'auto' }}  variant="h3" color="inherit">
-                        Section Three
-                    </Typography>
-                  </Grid>            
-              </Grid>             
+                  {/*/////////// Main Text Section Below Services Tile Set ///////////*/}          
+              </Grid>
+              <Grid className={classes.sectionThreeMainContainerHead} container justify="center">
+                <Typography style={{ margin: 'auto' }}  variant="h3" color="inherit">
+                  Section Three
+                </Typography>
+              </Grid>               
           </div>
       );
     }
