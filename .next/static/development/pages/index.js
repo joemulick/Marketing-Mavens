@@ -282,10 +282,15 @@ function (_React$Component) {
         className: classes.sectionalBackground3
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         item: true,
-        xs: 12
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        className: classes.paper
-      }, "xs=12"))));
+        className: classes.temp,
+        md: 12,
+        lg: 8
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, null, "8? Collapse @ 1280 to 12")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        item: true,
+        className: classes.temp,
+        md: 12,
+        lg: 4
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, null, "4? Collapse @ 1280px to 12"))));
     }
   }]);
 

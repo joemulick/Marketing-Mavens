@@ -16,6 +16,7 @@ const styles = {
     width: 'auto',
     backgroundColor:'#fff2e6',
   },
+  
 
 };
 
@@ -31,8 +32,11 @@ class OurServicesAndForm extends React.Component {
 
             <div className={classes.root}>
                 <Grid container className={classes.sectionalBackground3}>
-                    <Grid item xs={12}>
-                        <Typography className={classes.paper}>xs=12</Typography>
+                    <Grid item className={classes.temp} md={12} lg={8}>
+                        <Typography>8? Collapse @ 1280 to 12</Typography>
+                    </Grid>
+                    <Grid item className={classes.temp} md={12} lg={4}>
+                        <Typography>4? Collapse @ 1280px to 12</Typography>
                     </Grid>
                 </Grid>
             </div>
