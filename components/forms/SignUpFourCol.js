@@ -17,13 +17,6 @@ const styles = {
 
 
 class SignUpFourCol extends React.Component {
-
-    tate = {
-        name: 'Cat in the Hat',
-        age: '',
-        multiline: 'Controlled',
-        currency: 'EUR',
-    };
     
     handleChange = name => event => {
         this.setState({
@@ -40,19 +33,17 @@ class SignUpFourCol extends React.Component {
 
             <div className={classes.root}>
                 <Grid container >
-                    <Grid item>
-                        <form className={classes.container} noValidate autoComplete="off">
-                        <TextField
-                            id="outlined-email-input"
-                            label="Email"
-                            className={classes.textField}
-                            type="email"
-                            name="email"
-                            autoComplete="email"
-                            margin="normal"
-                            variant="outlined"
-                        />
-
+                    <Grid xs={12} item>
+                        <form className={classes.container}  noValidate autoComplete="off">
+                            <TextField
+                                label="Email"
+                                className={classes.inputwidthtest}
+                                type="email"
+                                name="email"
+                                autoComplete="email"
+                                fullWidth
+                                variant="outlined"
+                            />
                         </form>                       
                     </Grid>
                 </Grid>

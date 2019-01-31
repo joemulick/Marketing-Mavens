@@ -1019,13 +1019,6 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SignUpFourCol)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "tate", {
-      name: 'Cat in the Hat',
-      age: '',
-      multiline: 'Controlled',
-      currency: 'EUR'
-    });
-
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChange", function (name) {
       return function (event) {
         _this.setState(_defineProperty({}, name, event.target.value));
@@ -1044,19 +1037,19 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         container: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        xs: 12,
         item: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         className: classes.container,
         noValidate: true,
         autoComplete: "off"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-email-input",
         label: "Email",
-        className: classes.textField,
+        className: classes.inputwidthtest,
         type: "email",
         name: "email",
         autoComplete: "email",
-        margin: "normal",
+        fullWidth: true,
         variant: "outlined"
       })))));
     }
