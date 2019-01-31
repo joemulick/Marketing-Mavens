@@ -12,11 +12,23 @@ const styles = {
   root: {
     flexGrow: 1,
   },
+
+  formTitle: {
+    margin: '25px 0'
+  }
   
 };
 
 
+
 class SignUpFourCol extends React.Component {
+
+    state = {
+        name: '',
+        age: '',
+        multiline: '',
+        currency: '',
+      };
     
     handleChange = name => event => {
         this.setState({
@@ -34,17 +46,67 @@ class SignUpFourCol extends React.Component {
             <div className={classes.root}>
                 <Grid container >
                     <Grid xs={12} item>
-                        <form className={classes.container}  noValidate autoComplete="off">
-                            <TextField
-                                label="Email"
-                                className={classes.inputwidthtest}
-                                type="email"
-                                name="email"
-                                autoComplete="email"
-                                fullWidth
-                                variant="outlined"
-                            />
-                        </form>                       
+
+                            <form noValidate autoComplete="off">
+
+                                <Typography className={classes.formTitle} variant="h4" align="center" m={2}>
+                                    Lets work together
+                                </Typography>
+
+                                <Typography variant="h6" gutterBottom>
+                                    Organization
+                                </Typography>
+
+                                <TextField
+                                    id="outlined-organization"
+                                    label="Organization"
+                                    className={classes.textField}
+                                    value={this.state.organization}
+                                    onChange={this.handleChange('organization')}
+                                    variant="outlined"
+                                />
+
+                                <Typography variant="h6" gutterBottom>
+                                    Email
+                                </Typography>
+                                                                
+                                <TextField
+                                    label="Email"
+                                    type="email"
+                                    name="email"
+                                    autoComplete="email"
+                                    fullWidth
+                                    variant="outlined"
+                                />
+
+                                <Typography variant="h6" gutterBottom>
+                                    Name
+                                </Typography>
+
+                                <TextField
+                                    id="outlined-name"
+                                    label="Name"
+                                    className={classes.textField}
+                                    value={this.state.name}
+                                    onChange={this.handleChange('name')}
+                                    variant="outlined"
+                                />
+
+                                <Typography variant="h6" gutterBottom>
+                                    Preffered method of contact: radio choice
+                                </Typography>
+
+                                <Typography variant="h6" gutterBottom>
+                                    Can also add phone number
+                                </Typography>
+
+
+
+
+
+
+                
+                            </form>                     
                     </Grid>
                 </Grid>
             </div>

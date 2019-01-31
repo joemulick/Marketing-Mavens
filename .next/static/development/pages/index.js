@@ -905,6 +905,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var styles = {
   root: {
     flexGrow: 1
+  },
+  formTitle: {
+    margin: '25px 0'
   }
 };
 
@@ -925,6 +928,13 @@ function (_React$Component) {
     }
 
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SignUpFourCol)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+      name: '',
+      age: '',
+      multiline: '',
+      currency: ''
+    });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChange", function (name) {
       return function (event) {
@@ -947,18 +957,50 @@ function (_React$Component) {
         xs: 12,
         item: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        className: classes.container,
         noValidate: true,
         autoComplete: "off"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        className: classes.formTitle,
+        variant: "h4",
+        align: "center",
+        m: 2
+      }, "Lets work together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        variant: "h6",
+        gutterBottom: true
+      }, "Organization"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        id: "outlined-organization",
+        label: "Organization",
+        className: classes.textField,
+        value: this.state.organization,
+        onChange: this.handleChange('organization'),
+        variant: "outlined"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        variant: "h6",
+        gutterBottom: true
+      }, "Email"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
         label: "Email",
-        className: classes.inputwidthtest,
         type: "email",
         name: "email",
         autoComplete: "email",
         fullWidth: true,
         variant: "outlined"
-      })))));
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        variant: "h6",
+        gutterBottom: true
+      }, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        id: "outlined-name",
+        label: "Name",
+        className: classes.textField,
+        value: this.state.name,
+        onChange: this.handleChange('name'),
+        variant: "outlined"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        variant: "h6",
+        gutterBottom: true
+      }, "Preffered method of contact: radio choice"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        variant: "h6",
+        gutterBottom: true
+      }, "Can also add phone number")))));
     }
   }]);
 
