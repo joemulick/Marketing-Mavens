@@ -15,6 +15,9 @@ const styles = {
 
   formTitle: {
     margin: '25px 0'
+  },
+  fieldWidth: {
+      width: '375px'
   }
   
 };
@@ -24,10 +27,10 @@ const styles = {
 class SignUpFourCol extends React.Component {
 
     state = {
+        organization: '',
+        email: '',
         name: '',
-        age: '',
-        multiline: '',
-        currency: '',
+        contactNumber: '',
       };
     
     handleChange = name => event => {
@@ -53,59 +56,59 @@ class SignUpFourCol extends React.Component {
                                     Lets work together
                                 </Typography>
 
-                                <Typography variant="h6" gutterBottom>
-                                    Organization
-                                </Typography>
+                                <div className={classes.fieldWidth}>
 
-                                <TextField
-                                    id="outlined-organization"
-                                    label="Organization"
-                                    className={classes.textField}
-                                    value={this.state.organization}
-                                    onChange={this.handleChange('organization')}
-                                    variant="outlined"
-                                />
+                                    <TextField
+                                        id="outlined-organization-input"
+                                        label="Organization"
+                                        className={classes.textField}
+                                        name="organization"
+                                        autoComplete="organization"
+                                        variant="outlined"
+                                        margin="normal"
+                                        fullWidth
+                                    />
 
-                                <Typography variant="h6" gutterBottom>
-                                    Email
-                                </Typography>
-                                                                
-                                <TextField
-                                    label="Email"
-                                    type="email"
-                                    name="email"
-                                    autoComplete="email"
-                                    fullWidth
-                                    variant="outlined"
-                                />
+                                    <br />
 
-                                <Typography variant="h6" gutterBottom>
-                                    Name
-                                </Typography>
+                                    <TextField
+                                        id="outlined-email-input"
+                                        label="Email"
+                                        className={classes.textField}
+                                        type="email"
+                                        name="email"
+                                        autoComplete="email"
+                                        variant="outlined"
+                                        margin="normal"
+                                        fullWidth
+                                    />
 
-                                <TextField
-                                    id="outlined-name"
-                                    label="Name"
-                                    className={classes.textField}
-                                    value={this.state.name}
-                                    onChange={this.handleChange('name')}
-                                    variant="outlined"
-                                />
+                                    <br />
 
-                                <Typography variant="h6" gutterBottom>
-                                    Preffered method of contact: radio choice
-                                </Typography>
+                                    <TextField
+                                        id="outlined-name-input"
+                                        label="Name"
+                                        className={classes.textField}
+                                        autoComplete="name"
+                                        variant="outlined"
+                                        margin="normal"
+                                        fullWidth
+                                    />
 
-                                <Typography variant="h6" gutterBottom>
-                                    Can also add phone number
-                                </Typography>
+                                    <br />
 
+                                    <TextField
+                                        id="outlined-contact-input"
+                                        label="Contact Number"
+                                        className={classes.textField}
+                                        name="contactNumber"
+                                        autoComplete="tel"
+                                        variant="outlined"
+                                        margin="normal"
+                                    />
 
+                                </div>
 
-
-
-
-                
                             </form>                     
                     </Grid>
                 </Grid>

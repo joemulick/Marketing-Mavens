@@ -908,6 +908,9 @@ var styles = {
   },
   formTitle: {
     margin: '25px 0'
+  },
+  fieldWidth: {
+    width: '375px'
   }
 };
 
@@ -930,10 +933,10 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SignUpFourCol)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+      organization: '',
+      email: '',
       name: '',
-      age: '',
-      multiline: '',
-      currency: ''
+      contactNumber: ''
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChange", function (name) {
@@ -964,43 +967,44 @@ function (_React$Component) {
         variant: "h4",
         align: "center",
         m: 2
-      }, "Lets work together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        variant: "h6",
-        gutterBottom: true
-      }, "Organization"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-organization",
+      }, "Lets work together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: classes.fieldWidth
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        id: "outlined-organization-input",
         label: "Organization",
         className: classes.textField,
-        value: this.state.organization,
-        onChange: this.handleChange('organization'),
-        variant: "outlined"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        variant: "h6",
-        gutterBottom: true
-      }, "Email"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        name: "organization",
+        autoComplete: "organization",
+        variant: "outlined",
+        margin: "normal",
+        fullWidth: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        id: "outlined-email-input",
         label: "Email",
+        className: classes.textField,
         type: "email",
         name: "email",
         autoComplete: "email",
-        fullWidth: true,
-        variant: "outlined"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        variant: "h6",
-        gutterBottom: true
-      }, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-name",
+        variant: "outlined",
+        margin: "normal",
+        fullWidth: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        id: "outlined-name-input",
         label: "Name",
         className: classes.textField,
-        value: this.state.name,
-        onChange: this.handleChange('name'),
-        variant: "outlined"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        variant: "h6",
-        gutterBottom: true
-      }, "Preffered method of contact: radio choice"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        variant: "h6",
-        gutterBottom: true
-      }, "Can also add phone number")))));
+        autoComplete: "name",
+        variant: "outlined",
+        margin: "normal",
+        fullWidth: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        id: "outlined-contact-input",
+        label: "Contact Number",
+        className: classes.textField,
+        name: "contactNumber",
+        autoComplete: "tel",
+        variant: "outlined",
+        margin: "normal"
+      }))))));
     }
   }]);
 
