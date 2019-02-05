@@ -354,7 +354,8 @@ var styles = {
     backgroundColor: '#fff2e6'
   },
   contentSectionOurServices: {
-    minHeight: '215px'
+    minHeight: '400px',
+    backgroundColor: '#ddd2e6'
   }
 };
 
@@ -380,8 +381,8 @@ function (_React$Component) {
         className: classes.sectionalBackground3
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         item: true,
-        md: 12,
-        lg: 8
+        xs: 12,
+        md: 8
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.contentSectionOurServices
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, null, "8? Collapse @ 1280 to 12")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -392,8 +393,8 @@ function (_React$Component) {
         className: classes.contentSectionOurServices
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, null, "8? Collapse @ 1280 to 12"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         item: true,
-        md: 12,
-        lg: 4
+        xs: 12,
+        md: 4
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, null, "Idea: Make Form about 60% height of left component and sticky to top of page?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_forms_SignUpFourCol__WEBPACK_IMPORTED_MODULE_5__["default"], null)))));
     }
   }]);
@@ -969,6 +970,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__);
+var _fieldWidth;
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1002,9 +1005,11 @@ var styles = {
   formTitle: {
     margin: '25px 0'
   },
-  fieldWidth: {
-    width: '375px'
-  }
+  fieldWidth: (_fieldWidth = {
+    maxWidth: '375px',
+    padding: '15px',
+    position: '-webkit-sticky'
+  }, _defineProperty(_fieldWidth, "position", 'sticky'), _defineProperty(_fieldWidth, "top", '0'), _fieldWidth)
 };
 
 var SignUpFourCol =

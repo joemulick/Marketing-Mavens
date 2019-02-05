@@ -17,7 +17,11 @@ const styles = {
     margin: '25px 0'
   },
   fieldWidth: {
-      width: '375px'
+      maxWidth: '375px',
+      padding: '15px',
+      position: '-webkit-sticky',
+      position: 'sticky',
+      top: '0'
   }
   
 };

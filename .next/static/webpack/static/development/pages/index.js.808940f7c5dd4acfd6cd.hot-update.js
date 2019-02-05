@@ -21,6 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/Grid/index.js");
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__);
+var _fieldWidth;
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53,7 +55,12 @@ var styles = {
   },
   formTitle: {
     margin: '25px 0'
-  }
+  },
+  fieldWidth: (_fieldWidth = {
+    maxWidth: '375px',
+    padding: '15px',
+    position: '-webkit-sticky'
+  }, _defineProperty(_fieldWidth, "position", 'sticky'), _defineProperty(_fieldWidth, "top", '0'), _fieldWidth)
 };
 
 var SignUpFourCol =
@@ -109,7 +116,9 @@ function (_React$Component) {
         variant: "h4",
         align: "center",
         m: 2
-      }, "Lets work together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      }, "Lets work together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: classes.fieldWidth
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
         id: "outlined-organization-input",
         label: "Organization",
         className: classes.textField,
@@ -144,7 +153,7 @@ function (_React$Component) {
         autoComplete: "tel",
         variant: "outlined",
         margin: "normal"
-      })))));
+      }))))));
     }
   }]);
 
@@ -159,4 +168,4 @@ SignUpFourCol.propTypes = {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.1ceaeff1782b23721786.hot-update.js.map
+//# sourceMappingURL=index.js.808940f7c5dd4acfd6cd.hot-update.js.map

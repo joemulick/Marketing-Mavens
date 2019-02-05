@@ -18,7 +18,8 @@ const styles = {
     backgroundColor:'#fff2e6',
   },
   contentSectionOurServices: {
-    minHeight: '215px',
+    minHeight: '400px',
+    backgroundColor:'#ddd2e6',
   },
   
 
@@ -36,7 +37,7 @@ class OurServicesAndForm extends React.Component {
 
             <div className={classes.root}>
                 <Grid container className={classes.sectionalBackground3}>
-                    <Grid item md={12} lg={8}>
+                    <Grid item xs={12} md={8}>
                         <div className={classes.contentSectionOurServices}>
                           <Typography>8? Collapse @ 1280 to 12</Typography>
                         </div>
@@ -50,7 +51,7 @@ class OurServicesAndForm extends React.Component {
                           <Typography>8? Collapse @ 1280 to 12</Typography>
                         </div>
                     </Grid>
-                    <Grid item md={12} lg={4}>
+                    <Grid item xs={12} md={4}>
                         <div>
                           <Typography>Idea: Make Form about 60% height of left component and sticky to top of page?</Typography>
                           <SignUpFourCol />
