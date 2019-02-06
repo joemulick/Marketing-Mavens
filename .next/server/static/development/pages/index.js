@@ -320,6 +320,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _forms_SignUpFourCol__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./forms/SignUpFourCol */ "./components/forms/SignUpFourCol.js");
+/* harmony import */ var react_sticky__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-sticky */ "react-sticky");
+/* harmony import */ var react_sticky__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_sticky__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -337,6 +339,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -376,7 +379,7 @@ function (_React$Component) {
       var classes = this.props.classes;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.root
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_sticky__WEBPACK_IMPORTED_MODULE_6__["StickyContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         container: true,
         className: classes.sectionalBackground3
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -395,7 +398,7 @@ function (_React$Component) {
         item: true,
         xs: 12,
         md: 4
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, null, "Idea: Make Form about 60% height of left component and sticky to top of page?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_forms_SignUpFourCol__WEBPACK_IMPORTED_MODULE_5__["default"], null)))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_forms_SignUpFourCol__WEBPACK_IMPORTED_MODULE_5__["default"], null))))));
     }
   }]);
 
@@ -970,8 +973,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__);
-var _fieldWidth;
-
+/* harmony import */ var react_sticky__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-sticky */ "react-sticky");
+/* harmony import */ var react_sticky__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_sticky__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -998,18 +1001,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 var styles = {
   root: {
     flexGrow: 1
   },
   formTitle: {
-    margin: '25px 0'
+    margin: '65px 0 25px'
   },
-  fieldWidth: (_fieldWidth = {
+  fieldWidth: {
     maxWidth: '375px',
-    padding: '15px',
-    position: '-webkit-sticky'
-  }, _defineProperty(_fieldWidth, "position", 'sticky'), _defineProperty(_fieldWidth, "top", '0'), _fieldWidth)
+    padding: '15px'
+  }
 };
 
 var SignUpFourCol =
@@ -1057,52 +1060,56 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         xs: 12,
         item: true
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        noValidate: true,
-        autoComplete: "off"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        className: classes.formTitle,
-        variant: "h4",
-        align: "center",
-        m: 2
-      }, "Lets work together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.fieldWidth
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-organization-input",
-        label: "Organization",
-        className: classes.textField,
-        name: "organization",
-        autoComplete: "organization",
-        variant: "outlined",
-        margin: "normal",
-        fullWidth: true
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-email-input",
-        label: "Email",
-        className: classes.textField,
-        type: "email",
-        name: "email",
-        autoComplete: "email",
-        variant: "outlined",
-        margin: "normal",
-        fullWidth: true
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-name-input",
-        label: "Name",
-        className: classes.textField,
-        autoComplete: "name",
-        variant: "outlined",
-        margin: "normal",
-        fullWidth: true
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-contact-input",
-        label: "Contact Number",
-        className: classes.textField,
-        name: "contactNumber",
-        autoComplete: "tel",
-        variant: "outlined",
-        margin: "normal"
-      }))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_sticky__WEBPACK_IMPORTED_MODULE_6__["Sticky"], null, function (_ref) {
+        var style = _ref.style;
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: classes.fieldWidth,
+          style: style
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+          noValidate: true,
+          autoComplete: "off"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          className: classes.formTitle,
+          variant: "h4",
+          align: "center",
+          m: 6
+        }, "Lets work together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          id: "outlined-organization-input",
+          label: "Organization",
+          className: classes.textField,
+          name: "organization",
+          autoComplete: "organization",
+          variant: "outlined",
+          margin: "normal",
+          fullWidth: true
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          id: "outlined-email-input",
+          label: "Email",
+          className: classes.textField,
+          type: "email",
+          name: "email",
+          autoComplete: "email",
+          variant: "outlined",
+          margin: "normal",
+          fullWidth: true
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          id: "outlined-name-input",
+          label: "Name",
+          className: classes.textField,
+          autoComplete: "name",
+          variant: "outlined",
+          margin: "normal",
+          fullWidth: true
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          id: "outlined-contact-input",
+          label: "Contact Number",
+          className: classes.textField,
+          name: "contactNumber",
+          autoComplete: "tel",
+          variant: "outlined",
+          margin: "normal"
+        })));
+      }))));
     }
   }]);
 
@@ -2465,6 +2472,17 @@ module.exports = require("prop-types");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-sticky":
+/*!*******************************!*\
+  !*** external "react-sticky" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-sticky");
 
 /***/ })
 

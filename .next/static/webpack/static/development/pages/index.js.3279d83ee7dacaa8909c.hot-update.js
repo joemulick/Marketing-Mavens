@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/Grid/index.js");
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__);
-var _fieldWidth;
-
+/* harmony import */ var react_sticky__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-sticky */ "./node_modules/react-sticky/lib/index.js");
+/* harmony import */ var react_sticky__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_sticky__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -49,18 +49,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 var styles = {
   root: {
     flexGrow: 1
   },
   formTitle: {
-    margin: '25px 0'
+    margin: '65px 0 25'
   },
-  fieldWidth: (_fieldWidth = {
+  fieldWidth: {
     maxWidth: '375px',
-    padding: '15px',
-    position: '-webkit-sticky'
-  }, _defineProperty(_fieldWidth, "position", 'sticky'), _defineProperty(_fieldWidth, "top", '0'), _fieldWidth)
+    padding: '15px'
+  }
 };
 
 var SignUpFourCol =
@@ -108,52 +108,56 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         xs: 12,
         item: true
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        noValidate: true,
-        autoComplete: "off"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        className: classes.formTitle,
-        variant: "h4",
-        align: "center",
-        m: 2
-      }, "Lets work together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.fieldWidth
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-organization-input",
-        label: "Organization",
-        className: classes.textField,
-        name: "organization",
-        autoComplete: "organization",
-        variant: "outlined",
-        margin: "normal",
-        fullWidth: true
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-email-input",
-        label: "Email",
-        className: classes.textField,
-        type: "email",
-        name: "email",
-        autoComplete: "email",
-        variant: "outlined",
-        margin: "normal",
-        fullWidth: true
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-name-input",
-        label: "Name",
-        className: classes.textField,
-        autoComplete: "name",
-        variant: "outlined",
-        margin: "normal",
-        fullWidth: true
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        id: "outlined-contact-input",
-        label: "Contact Number",
-        className: classes.textField,
-        name: "contactNumber",
-        autoComplete: "tel",
-        variant: "outlined",
-        margin: "normal"
-      }))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_sticky__WEBPACK_IMPORTED_MODULE_6__["Sticky"], null, function (_ref) {
+        var style = _ref.style;
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: classes.fieldWidth,
+          style: style
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+          noValidate: true,
+          autoComplete: "off"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          className: classes.formTitle,
+          variant: "h4",
+          align: "center",
+          m: 6
+        }, "Lets work together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          id: "outlined-organization-input",
+          label: "Organization",
+          className: classes.textField,
+          name: "organization",
+          autoComplete: "organization",
+          variant: "outlined",
+          margin: "normal",
+          fullWidth: true
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          id: "outlined-email-input",
+          label: "Email",
+          className: classes.textField,
+          type: "email",
+          name: "email",
+          autoComplete: "email",
+          variant: "outlined",
+          margin: "normal",
+          fullWidth: true
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          id: "outlined-name-input",
+          label: "Name",
+          className: classes.textField,
+          autoComplete: "name",
+          variant: "outlined",
+          margin: "normal",
+          fullWidth: true
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          id: "outlined-contact-input",
+          label: "Contact Number",
+          className: classes.textField,
+          name: "contactNumber",
+          autoComplete: "tel",
+          variant: "outlined",
+          margin: "normal"
+        })));
+      }))));
     }
   }]);
 
@@ -168,4 +172,4 @@ SignUpFourCol.propTypes = {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.808940f7c5dd4acfd6cd.hot-update.js.map
+//# sourceMappingURL=index.js.3279d83ee7dacaa8909c.hot-update.js.map

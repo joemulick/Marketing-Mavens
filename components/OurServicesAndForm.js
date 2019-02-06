@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import SignUpFourCol from './forms/SignUpFourCol';
+import { StickyContainer } from 'react-sticky';
 
 
 
@@ -36,6 +37,7 @@ class OurServicesAndForm extends React.Component {
         return (
 
             <div className={classes.root}>
+              <StickyContainer>
                 <Grid container className={classes.sectionalBackground3}>
                     <Grid item xs={12} md={8}>
                         <div className={classes.contentSectionOurServices}>
@@ -53,11 +55,11 @@ class OurServicesAndForm extends React.Component {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <div>
-                          <Typography>Idea: Make Form about 60% height of left component and sticky to top of page?</Typography>
                           <SignUpFourCol />
                         </div>
                     </Grid>
                 </Grid>
+              </StickyContainer>
             </div>
 
       );
