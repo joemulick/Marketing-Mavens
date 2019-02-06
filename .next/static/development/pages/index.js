@@ -260,12 +260,13 @@ var styles = {
   },
   sectionalBackground3: {
     minHeight: '70vmin',
-    width: 'auto',
-    backgroundColor: '#fff2e6'
+    width: 'auto'
   },
-  contentSectionOurServices: {
+  contentSectionOurServicesStepOne: {
     minHeight: '400px',
-    backgroundColor: '#ddd2e6'
+    minWidth: '100%',
+    backgroundColor: '#b9ce92',
+    padding: '8% 15%'
   }
 };
 
@@ -294,14 +295,50 @@ function (_React$Component) {
         xs: 12,
         md: 8
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.contentSectionOurServices
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, null, "8? Collapse @ 1280 to 12")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.contentSectionOurServices
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, null, "8? Collapse @ 1280 to 12")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.contentSectionOurServices
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, null, "8? Collapse @ 1280 to 12")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.contentSectionOurServices
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, null, "8? Collapse @ 1280 to 12"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        className: classes.contentSectionOurServicesStepOne
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "h4",
+        gutterBottom: true
+      }, "Step 1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "subtitle1",
+        gutterBottom: true
+      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "body1",
+        gutterBottom: true
+      }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: classes.contentSectionOurServicesStepOne
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "h4",
+        gutterBottom: true
+      }, "Step 2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "subtitle1",
+        gutterBottom: true
+      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "body1",
+        gutterBottom: true
+      }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: classes.contentSectionOurServicesStepOne
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "h4",
+        gutterBottom: true
+      }, "Step 3"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "subtitle1",
+        gutterBottom: true
+      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "body1",
+        gutterBottom: true
+      }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: classes.contentSectionOurServicesStepOne
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "h4",
+        gutterBottom: true
+      }, "Step 4"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "subtitle1",
+        gutterBottom: true
+      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "body1",
+        gutterBottom: true
+      }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         item: true,
         xs: 12,
         md: 4
@@ -977,7 +1014,7 @@ function (_React$Component) {
           autoComplete: "off"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
           className: classes.formTitle,
-          variant: "h4",
+          variant: "h3",
           align: "center",
           m: 6
         }, "Lets work together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3___default.a, {

@@ -61,7 +61,7 @@ class SignUpFourCol extends React.Component {
                         
                             <form noValidate autoComplete="off">
 
-                                <Typography className={classes.formTitle} variant="h4" align="center" m={6}>
+                                <Typography className={classes.formTitle} variant="h3" align="center" m={6}>
                                     Lets work together
                                 </Typography>
 

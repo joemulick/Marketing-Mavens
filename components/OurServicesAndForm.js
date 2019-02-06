@@ -16,12 +16,15 @@ const styles = {
   sectionalBackground3: {
     minHeight: '70vmin',
     width: 'auto',
-    backgroundColor:'#fff2e6',
   },
-  contentSectionOurServices: {
+  contentSectionOurServicesStepOne: {
     minHeight: '400px',
-    backgroundColor:'#ddd2e6',
+    minWidth: '100%',
+    backgroundColor:'#b9ce92',
+    padding: '8% 15%',
   },
+
+
   
 
 };
@@ -40,17 +43,49 @@ class OurServicesAndForm extends React.Component {
               <StickyContainer>
                 <Grid container className={classes.sectionalBackground3}>
                     <Grid item xs={12} md={8}>
-                        <div className={classes.contentSectionOurServices}>
-                          <Typography>8? Collapse @ 1280 to 12</Typography>
+                        <div className={classes.contentSectionOurServicesStepOne}>                          
+                          <Typography  variant="h4" gutterBottom>
+                            Step 1
+                          </Typography>
+                          <Typography variant="subtitle1" gutterBottom>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </Typography>
+                          <Typography variant="body1" gutterBottom>
+                          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni  
+                        </Typography>
                         </div>
-                        <div className={classes.contentSectionOurServices}>
-                          <Typography>8? Collapse @ 1280 to 12</Typography>
+                        <div className={classes.contentSectionOurServicesStepOne}>
+                        <Typography  variant="h4" gutterBottom>
+                            Step 2
+                          </Typography>
+                          <Typography variant="subtitle1" gutterBottom>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </Typography>
+                          <Typography variant="body1" gutterBottom>
+                          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni  
+                        </Typography>
                         </div>
-                        <div className={classes.contentSectionOurServices}>
-                          <Typography>8? Collapse @ 1280 to 12</Typography>
+                        <div className={classes.contentSectionOurServicesStepOne}>
+                        <Typography  variant="h4" gutterBottom>
+                            Step 3
+                          </Typography>
+                          <Typography variant="subtitle1" gutterBottom>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </Typography>
+                          <Typography variant="body1" gutterBottom>
+                          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni  
+                        </Typography>
                         </div>
-                        <div className={classes.contentSectionOurServices}>
-                          <Typography>8? Collapse @ 1280 to 12</Typography>
+                        <div className={classes.contentSectionOurServicesStepOne}>
+                        <Typography  variant="h4" gutterBottom>
+                            Step 4
+                          </Typography>
+                          <Typography variant="subtitle1" gutterBottom>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </Typography>
+                          <Typography variant="body1" gutterBottom>
+                          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni  
+                        </Typography>
                         </div>
                     </Grid>
                     <Grid item xs={12} md={4}>
