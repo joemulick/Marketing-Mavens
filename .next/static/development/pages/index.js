@@ -41,9 +41,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var styles = {
   root: {
-    flexGrow: 1
-  },
-  bgtest: {
+    flexGrow: 1,
     backgroundColor: '#afb8c6'
   }
 };
@@ -64,7 +62,7 @@ function (_React$Component) {
     value: function render() {
       var classes = this.props.classes;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.bgtest
+        className: classes.root
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         gutterBottom: true,
         variant: "h1",

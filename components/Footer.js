@@ -9,8 +9,6 @@ import Typography from '@material-ui/core/Typography';
 const styles = {
     root: {
         flexGrow: 1,
-    },
-    bgtest: {
         backgroundColor: '#afb8c6'
     },
 };
@@ -22,7 +20,7 @@ class Footer extends React.Component {
         const { classes} = this.props;
     
         return (
-          <div className={classes.bgtest}>
+          <div className={classes.root}>
               <Typography gutterBottom variant="h1" component="h1">
                     FOOTER
               </Typography>

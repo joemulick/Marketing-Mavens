@@ -41,7 +41,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var styles = {
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    backgroundColor: '#afb8c6'
   },
   bgtest: {
     backgroundColor: '#afb8c6'
@@ -84,4 +85,4 @@ Footer.propTypes = {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.7c041a29316c1f36ae59.hot-update.js.map
+//# sourceMappingURL=index.js.dd2782c96ced89954294.hot-update.js.map
