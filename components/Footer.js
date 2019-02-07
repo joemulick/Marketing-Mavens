@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+
 
 
 
@@ -10,6 +12,15 @@ const styles = {
     root: {
         flexGrow: 1,
         backgroundColor: '#afb8c6'
+    },
+    square: {
+        height: '100%',
+        width: '100%',
+        backgroundColor: '#000000',
+        padding: '20%',
+    },
+    gridtest: {
+        height: '400px',
     },
 };
 
@@ -20,11 +31,25 @@ class Footer extends React.Component {
         const { classes} = this.props;
     
         return (
-          <div className={classes.root}>
-              <Typography gutterBottom variant="h1" component="h1">
-                    FOOTER
-              </Typography>
-          </div>
+            <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            >
+                <Grid className={classes.gridtest} item sm={12} md={4}>
+                    <div className={classes.square}>
+
+                    </div>
+                </Grid>
+                <Grid item sm={12} md={4}>
+
+
+                </Grid>
+                <Grid item sm={12} md={4}>
+
+                </Grid>           
+            </Grid>
         );
     }
 }
