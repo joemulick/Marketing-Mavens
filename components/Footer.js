@@ -57,9 +57,7 @@ class Footer extends React.Component {
                 <Grid item sm={12} md={4}>
                     <div className={classes.square}>
                         <ul>
-                            <li>Coffee</li>
-                            <li>Tea</li>
-                            <li>Milk</li>
+                            <li>trying Google Map React</li>
                         </ul>
                     </div>
                 </Grid>           
