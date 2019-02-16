@@ -16,7 +16,6 @@ const styles = {
     square: {
         height: '100%',
         width: '100%',
-        backgroundColor: '#000000',
         padding: '20%',
     },
     gridtest: {
@@ -39,15 +38,30 @@ class Footer extends React.Component {
             >
                 <Grid className={classes.gridtest} item sm={12} md={4}>
                     <div className={classes.square}>
-
+                        <ul>
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                        </ul>
                     </div>
                 </Grid>
                 <Grid item sm={12} md={4}>
-
-
+                <div className={classes.square}>
+                        <ul>
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                        </ul>
+                    </div>
                 </Grid>
                 <Grid item sm={12} md={4}>
-
+                    <div className={classes.square}>
+                        <ul>
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                        </ul>
+                    </div>
                 </Grid>           
             </Grid>
         );
