@@ -112,6 +112,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var google_map_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! google-map-react */ "google-map-react");
+/* harmony import */ var google_map_react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(google_map_react__WEBPACK_IMPORTED_MODULE_5__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -130,6 +132,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
 
@@ -145,9 +150,19 @@ var styles = {
     width: '100%',
     padding: '20%'
   },
+  square2: {
+    height: '300px',
+    width: '300px',
+    padding: '45px'
+  },
   gridtest: {
     height: '400px'
   }
+};
+
+var AnyReactComponent = function AnyReactComponent(_ref) {
+  var text = _ref.text;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, text);
 };
 
 var Footer =
@@ -182,19 +197,41 @@ function (_React$Component) {
         sm: 12,
         md: 4
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.square
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Coffee"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Tea"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Milk")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        className: classes.square2
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(google_map_react__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        defaultCenter: this.props.center,
+        defaultZoom: this.props.zoom
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AnyReactComponent, {
+        lat: 59.955413,
+        lng: 30.337844,
+        text: 'Kreyser Avrora'
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
         item: true,
         sm: 12,
         md: 4
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.square
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Coffee"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Tea"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Milk")))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(google_map_react__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        defaultCenter: this.props.center,
+        defaultZoom: this.props.zoom
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AnyReactComponent, {
+        lat: 59.955413,
+        lng: 30.337844,
+        text: 'Kreyser Avrora'
+      })))));
     }
   }]);
 
   return Footer;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+_defineProperty(Footer, "defaultProps", {
+  center: {
+    lat: 59.95,
+    lng: 30.33
+  },
+  zoom: 11
+});
 
 Footer.propTypes = {
   classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
@@ -2588,6 +2625,17 @@ module.exports = require("@material-ui/icons/HourglassEmpty");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/Menu");
+
+/***/ }),
+
+/***/ "google-map-react":
+/*!***********************************!*\
+  !*** external "google-map-react" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("google-map-react");
 
 /***/ }),
 
