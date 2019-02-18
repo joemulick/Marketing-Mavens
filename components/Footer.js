@@ -73,18 +73,7 @@ class Footer extends React.Component {
                     </div>
                 </Grid>
                 <Grid item sm={12} md={4}>
-                    <div className={classes.square}>
-                        <GoogleMapReact
-                            defaultCenter={this.props.center}
-                            defaultZoom={this.props.zoom}
-                        >
-                        <AnyReactComponent 
-                            lat={59.955413} 
-                            lng={30.337844} 
-                            text={'Kreyser Avrora'} 
-                        />
-                        </GoogleMapReact>
-                    </div>
+                    
                 </Grid>           
             </Grid>
         );

@@ -209,16 +209,7 @@ function (_React$Component) {
         item: true,
         sm: 12,
         md: 4
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.square
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(google_map_react__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        defaultCenter: this.props.center,
-        defaultZoom: this.props.zoom
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AnyReactComponent, {
-        lat: 59.955413,
-        lng: 30.337844,
-        text: 'Kreyser Avrora'
-      })))));
+      }));
     }
   }]);
 

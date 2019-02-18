@@ -26,6 +26,7 @@ const styles = {
     mozBackgroundSize: 'cover',
     oBackgroundSize: 'cover',
     backgroundSize: 'cover',
+    
   },
   grow: {
     flexGrow: 1,
@@ -76,11 +77,15 @@ class Index extends React.Component {
                 <Button color="inherit">Login</Button>
               </Toolbar>
             </AppBar>
-
           <Grid className={classes.mainGrid} container>
+            {/* <video className={classes.AppBarfullscreenVideo} loop autoPlay>
+                <source src={this.state.videoURL} type="video/mp4" />
+                <source src={this.state.videoURL} type="video/ogg" />
+                Your browser does not support the video tag.
+            </video> */}
             <Grid className={classes.subGridOne} item xs={12}>
                 <MainFeatures />
-            </Grid>    
+            </Grid>   
           </Grid>
 
 
