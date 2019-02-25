@@ -1,4 +1,3 @@
-import Page from '../layouts/main'
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -13,10 +12,13 @@ import MainFeatures from '../components/MainFeatures';
 import ServicesSection from '../components/ServicesSection';
 import OurServicesAndForm from '../components/OurServicesAndForm';
 
-const styles = {
+const styles = theme => ({
   root: {
+    textAlign: 'center',
+    paddingTop: theme.spacing.unit * 20,
     flexGrow: 1,
   },
+
   mainGrid: {
     minHeight: '70vmin',
     width: 'auto',
@@ -54,7 +56,7 @@ const styles = {
     backgroundColor: 'green',
     opacity: '.5'
   },
-};
+});
 
 class Index extends React.Component {
 
@@ -62,8 +64,6 @@ class Index extends React.Component {
     const { classes } = this.props;
 
     return (
-      <Page>
-
         <div className={classes.root}>
 
             <AppBar position="sticky">
@@ -95,7 +95,6 @@ class Index extends React.Component {
 
          
       </div> 
-    </Page>
     );
   }
 }
