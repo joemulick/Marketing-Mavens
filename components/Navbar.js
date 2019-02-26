@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -14,6 +15,13 @@ const styles = theme => ({
     root: {
       flexGrow: 1,
     },
+    grow: {
+      flexGrow: 1,
+    },
+    menuButton: {
+      marginLeft: -12,
+      marginRight: 20,
+    },
   
   });
 
@@ -28,17 +36,23 @@ class Navbar extends React.Component {
         const { classes} = this.props;
     
         return (
-            <AppBar position="sticky">
+          <div className={classes.root}>
+            <AppBar position="static">
               <Toolbar>
                 <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
                   <MenuIcon />
                 </IconButton>
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className={classes.grow}>
                   News
                 </Typography>
-                <Button color="inherit">Login</Button>
+
+                <Link href="/about">
+                  <Button color="inherit">About Us</Button>
+                </Link>
+                
               </Toolbar>
             </AppBar>
+          </div>
         );
     }
 }
