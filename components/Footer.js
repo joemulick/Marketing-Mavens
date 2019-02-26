@@ -29,6 +29,7 @@ const styles = {
     },
 };
 
+// related to the google map add on
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 
