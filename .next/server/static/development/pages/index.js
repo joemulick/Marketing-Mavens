@@ -3247,8 +3247,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 var styles = function styles(theme) {
   return {
     root: {
-      textAlign: 'center',
-      paddingTop: theme.spacing.unit * 20,
       flexGrow: 1
     },
     mainGrid: {
@@ -3309,20 +3307,20 @@ function (_React$Component) {
         className: classes.root,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 65
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default.a, {
         position: "sticky",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_5___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 68
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -3331,13 +3329,13 @@ function (_React$Component) {
         "aria-label": "Menu",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 69
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_9___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 70
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -3345,14 +3343,14 @@ function (_React$Component) {
         color: "inherit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 72
         },
         __self: this
       }, "News"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
         color: "inherit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 75
         },
         __self: this
       }, "Login"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -3360,7 +3358,7 @@ function (_React$Component) {
         container: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 78
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -3369,25 +3367,25 @@ function (_React$Component) {
         xs: 12,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 84
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MainFeatures__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 85
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ServicesSection__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 90
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_OurServicesAndForm__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 92
         },
         __self: this
       }));

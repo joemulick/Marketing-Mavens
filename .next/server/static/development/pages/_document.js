@@ -114,11 +114,11 @@ var _jsxFileName = "C:\\Users\\joemu\\Desktop\\Coding\\Marketing-Mavens-Main-Dir
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -155,6 +155,8 @@ function (_Document) {
   _createClass(MyDocument, [{
     key: "render",
     value: function render() {
+      var _React$createElement;
+
       var pageContext = this.props.pageContext;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("html", {
         lang: "en",
@@ -201,22 +203,28 @@ function (_Document) {
           lineNumber: 24
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", (_React$createElement = {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Krub:300,400,500,600,700"
+      }, _defineProperty(_React$createElement, "rel", "stylesheet"), _defineProperty(_React$createElement, "__source", {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      }), _defineProperty(_React$createElement, "__self", this), _React$createElement))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 31
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
         },
         __self: this
       })));
@@ -256,7 +264,7 @@ MyDocument.getInitialProps = function (ctx) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({}, props, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 67
         },
         __self: this
       }));
@@ -279,7 +287,7 @@ MyDocument.getInitialProps = function (ctx) {
     styles: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87
+        lineNumber: 88
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
@@ -290,7 +298,7 @@ MyDocument.getInitialProps = function (ctx) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88
+        lineNumber: 89
       },
       __self: this
     }), styled_jsx_server__WEBPACK_IMPORTED_MODULE_3___default()() || null)
