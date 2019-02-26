@@ -157,6 +157,12 @@ function (_React$Component) {
           lineNumber: 78
         },
         __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Footer, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80
+        },
+        __self: this
       }));
     }
   }]);
@@ -191,4 +197,4 @@ Index.propTypes = {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.039f598f6e13202b22d2.hot-update.js.map
+//# sourceMappingURL=index.js.a589b0c3a4603a1a0e21.hot-update.js.map

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import Grid from '@material-ui/core/Grid';
 import MainFeatures from '../components/MainFeatures';
 import ServicesSection from '../components/ServicesSection';
@@ -77,7 +78,7 @@ class Index extends React.Component {
 
           <OurServicesAndForm />
 
-         
+          <Footer />
       </div> 
     );
   }
