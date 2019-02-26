@@ -16,7 +16,7 @@ const styles = theme => ({
   mainGrid: {
     minHeight: '70vmin',
     width: 'auto',
-    background:'url(https://res.cloudinary.com/ddsihrmda/image/upload/v1548226609/carlos-muza-84523-unsplash_kcw88s.jpg) no-repeat center center fixed',
+    background:'url(https://res.cloudinary.com/ddsihrmda/image/upload/v1551161156/rawpixel-653764-unsplash-edited_ezhadt.jpg) no-repeat fixed',
     position: 'relative',
     webkitBackgroundSize: 'cover',
     mozBackgroundSize: 'cover',
@@ -35,21 +35,6 @@ const styles = theme => ({
     backgroundColor: 'rgba(248, 247, 216, 0.7)',
     minHeight: '70vmin',
   },
-  mainInnerContainerOne: {
-    height: '100%',
-    backgroundColor: 'green',
-    opacity: '.5'
-  },
-  mainInnerContainerTwo: {
-    height: '100%',
-    backgroundColor: 'green',
-    opacity: '.5'
-  },
-  mainInnerContainerThree: {
-    height: '100%',
-    backgroundColor: 'green',
-    opacity: '.5'
-  },
 });
 
 class Index extends React.Component {
@@ -62,17 +47,7 @@ class Index extends React.Component {
 
           <Navbar />
             
-          <Grid className={classes.mainGrid} container>
-            {/* <video className={classes.AppBarfullscreenVideo} loop autoPlay>
-                <source src={this.state.videoURL} type="video/mp4" />
-                <source src={this.state.videoURL} type="video/ogg" />
-                Your browser does not support the video tag.
-            </video> */}
-            <Grid className={classes.subGridOne} item xs={12}>
-                <MainFeatures />
-            </Grid>   
-          </Grid>
-
+          <MainFeatures />
 
           <ServicesSection />
 

@@ -31,7 +31,24 @@ const styles = {
   },
   cardText: {
     height: '163px',
-  }
+  },
+
+  /////////////////////////////////////////////////////
+  mainGrid: {
+    minHeight: '70vmin',
+    width: 'auto',
+    background:'url(https://res.cloudinary.com/ddsihrmda/image/upload/v1551161156/rawpixel-653764-unsplash-edited_ezhadt.jpg) no-repeat fixed',
+    position: 'relative',
+    webkitBackgroundSize: 'cover',
+    mozBackgroundSize: 'cover',
+    oBackgroundSize: 'cover',
+    backgroundSize: 'cover',
+    
+  },
+  subGridOne: {
+    backgroundColor: 'rgba(239, 239, 239, 0.7)',
+    minHeight: '70vmin',
+  },
 };
 
 function FormRow(props) {
@@ -39,7 +56,15 @@ function FormRow(props) {
 
   return (
     <React.Fragment>
-        <Grid item sm={12} md={4}>
+    
+
+    <Grid className={classes.mainGrid} container>
+            {/* <video className={classes.AppBarfullscreenVideo} loop autoPlay>
+                <source src={this.state.videoURL} type="video/mp4" />
+                <source src={this.state.videoURL} type="video/ogg" />
+                Your browser does not support the video tag.
+            </video> */}
+        <Grid className={classes.subGridOne} item sm={12} md={4}>
               <Card className={classes.card1}>
                 <CardActionArea>
                   <CardMedia
@@ -67,7 +92,7 @@ function FormRow(props) {
             </Card>
         </Grid>
 
-        <Grid item sm={12} md={4}>
+        <Grid className={classes.subGridOne} item sm={12} md={4}>
             <Card className={classes.card2}>
                 <CardActionArea>
                   <CardMedia
@@ -95,7 +120,7 @@ function FormRow(props) {
             </Card>
         </Grid>
 
-        <Grid item sm={12} md={4}>
+        <Grid className={classes.subGridOne} item sm={12} md={4}>
             <Card className={classes.card3}>
                 <CardActionArea>
                   <CardMedia
@@ -122,6 +147,8 @@ function FormRow(props) {
               </CardActions>
             </Card>
         </Grid>
+      </Grid>
+
     </React.Fragment>
   );
 }

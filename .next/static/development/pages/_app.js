@@ -1081,6 +1081,41 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/colors/orange.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/orange.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var orange = {
+  50: '#fff3e0',
+  100: '#ffe0b2',
+  200: '#ffcc80',
+  300: '#ffb74d',
+  400: '#ffa726',
+  500: '#ff9800',
+  600: '#fb8c00',
+  700: '#f57c00',
+  800: '#ef6c00',
+  900: '#e65100',
+  A100: '#ffd180',
+  A200: '#ffab40',
+  A400: '#ff9100',
+  A700: '#ff6d00'
+};
+var _default = orange;
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/colors/pink.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@material-ui/core/colors/pink.js ***!
@@ -19661,6 +19696,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/colors/green */ "./node_modules/@material-ui/core/colors/green.js");
 /* harmony import */ var _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_colors_orange__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/colors/orange */ "./node_modules/@material-ui/core/colors/orange.js");
+/* harmony import */ var _material_ui_core_colors_orange__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors_orange__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -19672,12 +19710,19 @@ var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["create
     primary: {
       light: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[300],
       main: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[500],
-      dark: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[700]
+      dark: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[700],
+      contrastText: '#fff'
     },
     secondary: {
       light: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[300],
       main: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[500],
-      dark: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[700]
+      dark: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[700],
+      contrastText: '#000'
+    },
+    error: {
+      light: _material_ui_core_colors_orange__WEBPACK_IMPORTED_MODULE_4___default.a[300],
+      main: _material_ui_core_colors_orange__WEBPACK_IMPORTED_MODULE_4___default.a[500],
+      dark: _material_ui_core_colors_orange__WEBPACK_IMPORTED_MODULE_4___default.a[700]
     }
   },
   typography: {

@@ -22,7 +22,12 @@ const styles = theme => ({
       marginLeft: -12,
       marginRight: 20,
     },
-  
+    menuColor: {
+      background: '#FFF',
+    },
+    menuText: {
+      color: '#000'
+    },
   });
 
 class Navbar extends React.Component {
@@ -37,19 +42,19 @@ class Navbar extends React.Component {
     
         return (
           <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="fixed" className={classes.menuColor}>
               <Toolbar>
-                <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-                  <MenuIcon />
+                <IconButton className={classes.menuButton}  aria-label="Menu">
+                  <MenuIcon className={classes.menuText} />
                 </IconButton>
-                <Typography variant="h6" color="inherit" className={classes.grow}>
-                  News
+                <Typography variant="h6"  className={classes.grow}>
+                  <span className={classes.menuText} >News</span>
                 </Typography>
 
                 <Link href="/about">
-                  <Button color="inherit">About Us</Button>
+                  <Button className={classes.menuText}>About Us</Button>
                 </Link>
-                
+
               </Toolbar>
             </AppBar>
           </div>
