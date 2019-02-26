@@ -31,9 +31,9 @@ const styles = {
   },
   cardText: {
     height: '163px',
+    backgroundColor: 'rgba(239, 239, 239)',
   },
-
-  /////////////////////////////////////////////////////
+  //////////////index-refactor/////////////////////////////
   mainGrid: {
     minHeight: '70vmin',
     width: 'auto',
@@ -48,6 +48,10 @@ const styles = {
   subGridOne: {
     backgroundColor: 'rgba(239, 239, 239, 0.7)',
     minHeight: '70vmin',
+  },
+  //////////////index-refactor/////////////////////////////
+  altBGColor: {
+    backgroundColor: 'rgb(216, 216, 216)',
   },
 };
 
@@ -81,7 +85,7 @@ function FormRow(props) {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
+                <CardActions className={classes.altBGColor}>
                       <Button size="small" color="primary">
                         Share
                       </Button>
@@ -109,7 +113,7 @@ function FormRow(props) {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                  <CardActions>
+                  <CardActions className={classes.altBGColor}>
                       <Button size="small" color="primary">
                         Share
                       </Button>
@@ -137,7 +141,7 @@ function FormRow(props) {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
+                <CardActions className={classes.altBGColor}>
                     <Button size="small" color="primary">
                       Share
                     </Button>

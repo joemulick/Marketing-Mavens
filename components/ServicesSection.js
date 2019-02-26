@@ -22,7 +22,7 @@ const styles = {
     flexGrow: 1,
   },
   sectionTwoMainContainerHead: {
-      background:'#fff2e6',
+      background:'rgba(239, 239, 239)',
       height: '125px',
       width: 'auto',
   },
@@ -30,7 +30,7 @@ const styles = {
 
   // },
   sectionTwoInnerContainer: {
-      backgroundColor: 'rgba(248, 247, 216, 0.7)',
+      backgroundColor: 'rgba(239, 239, 239, 0.7)',
       height: '200px',
       border: '1px grey dotted',
       flexWrap: 'nowrap',
@@ -57,7 +57,7 @@ const styles = {
       width: '25%',
   },
   sectionThreeMainContainerHead: {
-    backgroundColor: 'rgba(248, 247, 216, 0.7)',
+    backgroundColor: 'rgba(239, 239, 239, 0.7)',
     height: '200px',
     border: '1px grey dotted',
   },
