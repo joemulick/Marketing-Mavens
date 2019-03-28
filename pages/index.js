@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Grid from '@material-ui/core/Grid';
 import MainFeatures from '../components/MainFeatures';
 import ServicesSection from '../components/ServicesSection';
 import OurServicesAndForm from '../components/OurServicesAndForm';
@@ -13,17 +12,17 @@ const styles = theme => ({
     flexGrow: 1,
   },
 
-  mainGrid: {
-    minHeight: '70vmin',
-    width: 'auto',
-    background:'url(https://res.cloudinary.com/ddsihrmda/image/upload/v1551161156/rawpixel-653764-unsplash-edited_ezhadt.jpg) no-repeat fixed',
-    position: 'relative',
-    webkitBackgroundSize: 'cover',
-    mozBackgroundSize: 'cover',
-    oBackgroundSize: 'cover',
-    backgroundSize: 'cover',
+  // mainGrid: {
+  //   minHeight: '70vmin',
+  //   width: 'auto',
+  //   background:'url(https://res.cloudinary.com/ddsihrmda/image/upload/v1551161156/rawpixel-653764-unsplash-edited_ezhadt.jpg) no-repeat fixed',
+  //   position: 'relative',
+  //   webkitBackgroundSize: 'cover',
+  //   mozBackgroundSize: 'cover',
+  //   oBackgroundSize: 'cover',
+  //   backgroundSize: 'cover',
     
-  },
+  // },
   grow: {
     flexGrow: 1,
   },

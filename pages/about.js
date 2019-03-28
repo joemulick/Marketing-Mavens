@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import AboutUsMain from '../components/AboutUsMain';
 
 
 const styles = theme => ({
@@ -20,6 +21,7 @@ class About extends React.Component {
         <div className={classes.root}>
           <Navbar />
             
+            <AboutUsMain />
          
           <Footer />
       </div> 
