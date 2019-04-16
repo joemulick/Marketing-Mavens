@@ -14,9 +14,10 @@ const styles = theme => ({
 
     root: {
       flexGrow: 1,
+      height: 64
     },
     grow: {
-      flexGrow: 1,
+      flexGrow: 1
     },
     menuButton: {
       marginLeft: -12,
@@ -31,11 +32,6 @@ const styles = theme => ({
   });
 
 class Navbar extends React.Component {
-
-    static defaultProps = {
-        center: {lat: 59.95, lng: 30.33},
-        zoom: 11
-    };
     
     render() {
         const { classes} = this.props;

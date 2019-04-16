@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Navbar from '../components/Navbar';
+import NavbarHeightSpacer from '../components/NavbarHeightSpacer'
 import Footer from '../components/Footer';
-import MainFeatures from '../components/MainFeatures';
+// import MainFeatures from '../components/MainFeatures';
 import ServicesSection from '../components/ServicesSection';
 import OurServicesAndForm from '../components/OurServicesAndForm';
 
@@ -21,7 +22,6 @@ const styles = theme => ({
   //   mozBackgroundSize: 'cover',
   //   oBackgroundSize: 'cover',
   //   backgroundSize: 'cover',
-    
   // },
   grow: {
     flexGrow: 1,
@@ -44,8 +44,9 @@ class Index extends React.Component {
     return (
         <div className={classes.root}>
           <Navbar />
+          {/* <NavbarHeightSpacer /> */}
             
-          <MainFeatures />
+          {/* <MainFeatures /> */}
 
           <ServicesSection />
 
