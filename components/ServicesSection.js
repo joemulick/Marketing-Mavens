@@ -11,10 +11,13 @@ import ServiceModalFour from './serviceModals/ServiceModalFour';
 import ServiceModalFive from './serviceModals/ServiceModalFive';
 import ServiceModalSix from './serviceModals/ServiceModalSix';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import HourglassEmpty from '@material-ui/icons/HourglassEmpty';
-import AssignmentTurnedIn from '@material-ui/icons/AssignmentTurnedIn';
-// import HourglassEmpty from '@material-ui/icons/HourglassEmpty';
-// import HourglassEmpty from '@material-ui/icons/HourglassEmpty';
+import Email from '@material-ui/icons/Email';
+import Web from '@material-ui/icons/Web';
+import BorderColor from '@material-ui/icons/BorderColor';
+import FontDownload from '@material-ui/icons/FontDownload';
+import PersonAdd from '@material-ui/icons/PersonAdd';
+import Search from '@material-ui/icons/Search';
+
 
 
 const styles = {
@@ -26,13 +29,9 @@ const styles = {
       height: '125px',
       width: 'auto',
   },
-  // sectionTwoInnerContainerHead: {
-
-  // },
   sectionTwoInnerContainer: {
       backgroundColor: 'rgba(239, 239, 239, 0.7)',
       height: '200px',
-      border: '1px grey dotted',
       flexWrap: 'nowrap',
   },
   sectionTwoMainContainer: {
@@ -59,7 +58,6 @@ const styles = {
   sectionThreeMainContainerHead: {
     backgroundColor: 'rgba(239, 239, 239, 0.7)',
     height: '200px',
-    border: '1px grey dotted',
   },
 };
 
@@ -135,26 +133,29 @@ class ServicesSection extends React.Component {
                   </Typography>
               </Grid>
               <Grid className={classes.sectionTwoMainContainer} container spacing={8}>
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
+                  {/*  ////////////////////////////     Services 1  //////////////////////////// */}
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
                   <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                     <Grid className={classes.innerGridHeightAdjust} container>
                       <Grid className={classes.innerGridHeightAdjustTwo} item>
                         <ButtonBase>
-                          <AssignmentTurnedIn className={classes.icon} color="primary" />
+                          <Email className={classes.icon}/>
                         </ButtonBase>
                       </Grid>
                       <Grid item xs={12} sm container>
                         <Grid item xs container direction="column">
                           <Grid className={classes.innerGridHeightAdjustTwoText} item xs>
                             <Typography style={{ marginTop: '8%'}} variant="h6">
-                              Service One
+                              Email Services
                             </Typography>
                             <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                              Strategy, Website development services, Solutions Engineering, Deliverability, Lifecycle Emails, ESP specialists. 
                             </Typography>
                           </Grid>
                         </Grid>
                         <Grid item>
-                              <Button style={{ marginTop: '128%' }} variant="outlined" color="primary" onClick={this.handleClickOpenOne}>
+                              <Button style={{ marginTop: '128%' }} variant="outlined" onClick={this.handleClickOpenOne}>
                                 learn more
                                 </Button>
                                 <ServiceModalOne
@@ -165,26 +166,29 @@ class ServicesSection extends React.Component {
                       </Grid>
                     </Grid>
                   </Grid> 
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
+                  {/*  ////////////////////////////     Services 2  //////////////////////////// */}
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
                   <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                   <Grid className={classes.innerGridHeightAdjust} container>
                       <Grid className={classes.innerGridHeightAdjustTwo} item>
                         <ButtonBase>
-                          <AssignmentTurnedIn className={classes.icon} color="primary" />
+                          <Web className={classes.icon}/>
                         </ButtonBase>
                       </Grid>
                       <Grid item xs={12} sm container>
                         <Grid item xs container direction="column" spacing={16}>
                           <Grid item xs>
                             <Typography style={{ marginTop: '8%'}} variant="h6">
-                              Service Two
+                              Website Design and Development 
                             </Typography>
                             <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                              From Website design consultation to entire website devlopment and hosting services.
                             </Typography>
                           </Grid>
                         </Grid>
                         <Grid item>
-                              <Button style={{ marginTop: '128%' }} variant="outlined" color="primary" onClick={this.handleClickOpenTwo}>
+                              <Button style={{ marginTop: '128%' }} variant="outlined" onClick={this.handleClickOpenTwo}>
                                 learn more
                                 </Button>
                                 <ServiceModalTwo
@@ -195,26 +199,29 @@ class ServicesSection extends React.Component {
                       </Grid>
                     </Grid>
                   </Grid> 
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
+                  {/*  ////////////////////////////     Services 3  //////////////////////////// */}
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
                   <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                   <Grid container className={classes.innerGridHeightAdjust}>
                       <Grid className={classes.innerGridHeightAdjustTwo} item>
                         <ButtonBase>
-                          <AssignmentTurnedIn className={classes.icon} color="primary" />
+                          <BorderColor className={classes.icon}/>
                         </ButtonBase>
                       </Grid>
                       <Grid item xs={12} sm container>
                         <Grid item xs container direction="column" spacing={16}>
                           <Grid item xs>
                             <Typography style={{ marginTop: '8%'}} variant="h6">
-                              Service Three
+                              Graphic & Logo Design
                             </Typography>
                             <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                              Web Design, Social Posts, Email layouts and assets, Pring Marketing Material, Logos, Signage
                             </Typography>
                           </Grid>
                         </Grid>
                         <Grid item>
-                              <Button style={{ marginTop: '128%' }} variant="outlined" color="primary" onClick={this.handleClickOpenThree}>
+                              <Button style={{ marginTop: '128%' }} variant="outlined" onClick={this.handleClickOpenThree}>
                                 learn more
                                 </Button>
                                 <ServiceModalThree
@@ -225,28 +232,34 @@ class ServicesSection extends React.Component {
                       </Grid>
                     </Grid>
                   </Grid>
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
+                  {/*  ////////////////////////////     Services 3  //////////////////////////// */}
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
                   {/*/////////////////// Second Row ///////////////////////////// */}
                   {/*/////////////////// Second Row ///////////////////////////// */} 
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
+                  {/*  ////////////////////////////     Services 4  //////////////////////////// */}
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
                   <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                   <Grid container className={classes.innerGridHeightAdjust}>
                       <Grid className={classes.innerGridHeightAdjustTwo} item>
                         <ButtonBase>
-                          <AssignmentTurnedIn className={classes.icon} color="primary" />
+                          <FontDownload className={classes.icon}/>
                         </ButtonBase>
                       </Grid>
                       <Grid item xs={12} sm container>
                         <Grid item xs container direction="column" spacing={16}>
                           <Grid item xs>
                             <Typography style={{ marginTop: '8%'}} variant="h6">
-                              Service Four
+                              Content Management
                             </Typography>
                             <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                              Create: Articles, Blogs, Infographis, Social Media Posts, Webinars and more.
                             </Typography>
                           </Grid>
                         </Grid>
                         <Grid item>
-                              <Button style={{ marginTop: '128%' }} variant="outlined" color="primary" onClick={this.handleClickOpenFour}>
+                              <Button style={{ marginTop: '128%' }} variant="outlined" onClick={this.handleClickOpenFour}>
                                 learn more
                                 </Button>
                                 <ServiceModalFour
@@ -256,27 +269,30 @@ class ServicesSection extends React.Component {
                         </Grid>
                       </Grid>
                     </Grid>
-                  </Grid> 
+                  </Grid>
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
+                  {/*  ////////////////////////////     Services 5  //////////////////////////// */}
+                  {/*  ///////////////////////////////////////////////////////////////////////// */} 
                   <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                   <Grid container className={classes.innerGridHeightAdjust}>
                       <Grid className={classes.innerGridHeightAdjustTwo} item>
                         <ButtonBase>
-                          <AssignmentTurnedIn className={classes.icon} color="primary" />
+                          <PersonAdd className={classes.icon}/>
                         </ButtonBase>
                       </Grid>
                       <Grid item xs={12} sm container>
                         <Grid item xs container direction="column" spacing={16}>
                           <Grid item xs>
                             <Typography style={{ marginTop: '8%'}} variant="h6">
-                              Service Five
+                              Social Media
                             </Typography>
                             <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                              Pinterest, Instagram, Facebook, Twitter
                             </Typography>
                           </Grid>
                         </Grid>
                         <Grid item>
-                              <Button style={{ marginTop: '128%' }} variant="outlined" color="primary" onClick={this.handleClickOpenFive}>
+                              <Button style={{ marginTop: '128%' }} variant="outlined" onClick={this.handleClickOpenFive}>
                                 learn more
                                 </Button>
                                 <ServiceModalFive
@@ -287,26 +303,29 @@ class ServicesSection extends React.Component {
                       </Grid>
                     </Grid>
                   </Grid> 
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
+                  {/*  ////////////////////////////     Services 6  //////////////////////////// */}
+                  {/*  ///////////////////////////////////////////////////////////////////////// */}
                   <Grid className={classes.sectionTwoInnerContainer} item sm={12} md={4}>
                   <Grid container className={classes.innerGridHeightAdjust}>
                       <Grid className={classes.innerGridHeightAdjustTwo} item>
                         <ButtonBase>
-                          <AssignmentTurnedIn className={classes.icon} color="primary" />
+                          <Search className={classes.icon}/>
                         </ButtonBase>
                       </Grid>
                       <Grid item xs={12} sm container>
                         <Grid item xs container direction="column" spacing={16}>
                           <Grid item xs>
                             <Typography style={{ marginTop: '8%'}} variant="h6">
-                              Service Six
+                              Search Engine Optimization and PPC 
                             </Typography>
                             <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                              We can search engine optimze your existing website, or manage your PPC campaigns to maximize returns. 
                             </Typography>
                           </Grid>
                         </Grid>
                         <Grid item>
-                              <Button style={{ marginTop: '128%' }} variant="outlined" color="primary" onClick={this.handleClickOpenSix}>
+                              <Button style={{ marginTop: '128%' }} variant="outlined" onClick={this.handleClickOpenSix}>
                                 learn more
                                 </Button>
                                 <ServiceModalSix

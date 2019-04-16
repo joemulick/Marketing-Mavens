@@ -855,10 +855,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _serviceModals_ServiceModalSix__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./serviceModals/ServiceModalSix */ "./components/serviceModals/ServiceModalSix.js");
 /* harmony import */ var _material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/ButtonBase */ "@material-ui/core/ButtonBase");
 /* harmony import */ var _material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _material_ui_icons_HourglassEmpty__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/HourglassEmpty */ "@material-ui/icons/HourglassEmpty");
-/* harmony import */ var _material_ui_icons_HourglassEmpty__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_HourglassEmpty__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/AssignmentTurnedIn */ "@material-ui/icons/AssignmentTurnedIn");
-/* harmony import */ var _material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/Email */ "@material-ui/icons/Email");
+/* harmony import */ var _material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _material_ui_icons_Web__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/Web */ "@material-ui/icons/Web");
+/* harmony import */ var _material_ui_icons_Web__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Web__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _material_ui_icons_BorderColor__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/BorderColor */ "@material-ui/icons/BorderColor");
+/* harmony import */ var _material_ui_icons_BorderColor__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_BorderColor__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _material_ui_icons_FontDownload__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/icons/FontDownload */ "@material-ui/icons/FontDownload");
+/* harmony import */ var _material_ui_icons_FontDownload__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_FontDownload__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _material_ui_icons_PersonAdd__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/icons/PersonAdd */ "@material-ui/icons/PersonAdd");
+/* harmony import */ var _material_ui_icons_PersonAdd__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_PersonAdd__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @material-ui/icons/Search */ "@material-ui/icons/Search");
+/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_18__);
 var _jsxFileName = "C:\\Users\\joemu\\Desktop\\Coding\\Marketing-Mavens-Main-Directory\\Marketing-Mavens\\components\\ServicesSection.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -899,8 +907,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
- // import HourglassEmpty from '@material-ui/icons/HourglassEmpty';
-// import HourglassEmpty from '@material-ui/icons/HourglassEmpty';
+
+
+
+
 
 var styles = {
   root: {
@@ -911,12 +921,9 @@ var styles = {
     height: '125px',
     width: 'auto'
   },
-  // sectionTwoInnerContainerHead: {
-  // },
   sectionTwoInnerContainer: {
     backgroundColor: 'rgba(239, 239, 239, 0.7)',
     height: '200px',
-    border: '1px grey dotted',
     flexWrap: 'nowrap'
   },
   sectionTwoMainContainer: {
@@ -942,8 +949,7 @@ var styles = {
   },
   sectionThreeMainContainerHead: {
     backgroundColor: 'rgba(239, 239, 239, 0.7)',
-    height: '200px',
-    border: '1px grey dotted'
+    height: '200px'
   }
 };
 
@@ -1062,7 +1068,7 @@ function (_React$Component) {
         className: classes.root,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 129
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1071,7 +1077,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 132
+          lineNumber: 130
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1082,7 +1088,7 @@ function (_React$Component) {
         color: "inherit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133
+          lineNumber: 131
         },
         __self: this
       }, "Services")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1091,7 +1097,7 @@ function (_React$Component) {
         spacing: 8,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 135
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1101,7 +1107,7 @@ function (_React$Component) {
         md: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 139
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1109,7 +1115,7 @@ function (_React$Component) {
         container: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139
+          lineNumber: 140
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1117,21 +1123,20 @@ function (_React$Component) {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 141
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 142
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_14___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_13___default.a, {
         className: classes.icon,
-        color: "primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 142
+          lineNumber: 143
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1141,7 +1146,7 @@ function (_React$Component) {
         container: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 146
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1151,7 +1156,7 @@ function (_React$Component) {
         direction: "column",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146
+          lineNumber: 147
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1160,7 +1165,7 @@ function (_React$Component) {
         xs: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 147
+          lineNumber: 148
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1170,20 +1175,20 @@ function (_React$Component) {
         variant: "h6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 148
+          lineNumber: 149
         },
         __self: this
-      }, "Service One"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      }, "Email Services"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151
+          lineNumber: 152
         },
         __self: this
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      }, "Strategy, Website development services, Solutions Engineering, Deliverability, Lifecycle Emails, ESP specialists."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 156
+          lineNumber: 157
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -1191,11 +1196,10 @@ function (_React$Component) {
           marginTop: '128%'
         },
         variant: "outlined",
-        color: "primary",
         onClick: this.handleClickOpenOne,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157
+          lineNumber: 158
         },
         __self: this
       }, "learn more"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalOne__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -1203,7 +1207,7 @@ function (_React$Component) {
         onClose: this.handleCloseOne,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 160
+          lineNumber: 161
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1213,7 +1217,7 @@ function (_React$Component) {
         md: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 168
+          lineNumber: 172
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1221,7 +1225,7 @@ function (_React$Component) {
         container: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169
+          lineNumber: 173
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1229,21 +1233,20 @@ function (_React$Component) {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 174
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 175
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_14___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Web__WEBPACK_IMPORTED_MODULE_14___default.a, {
         className: classes.icon,
-        color: "primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 172
+          lineNumber: 176
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1253,7 +1256,7 @@ function (_React$Component) {
         container: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 179
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1264,7 +1267,7 @@ function (_React$Component) {
         spacing: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
+          lineNumber: 180
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1272,7 +1275,7 @@ function (_React$Component) {
         xs: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 181
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1282,20 +1285,20 @@ function (_React$Component) {
         variant: "h6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 178
+          lineNumber: 182
         },
         __self: this
-      }, "Service Two"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      }, "Website Design and Development"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 181
+          lineNumber: 185
         },
         __self: this
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      }, "From Website design consultation to entire website devlopment and hosting services."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 186
+          lineNumber: 190
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -1303,11 +1306,10 @@ function (_React$Component) {
           marginTop: '128%'
         },
         variant: "outlined",
-        color: "primary",
         onClick: this.handleClickOpenTwo,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 187
+          lineNumber: 191
         },
         __self: this
       }, "learn more"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalTwo__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -1315,7 +1317,7 @@ function (_React$Component) {
         onClose: this.handleCloseTwo,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 190
+          lineNumber: 194
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1325,7 +1327,7 @@ function (_React$Component) {
         md: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 198
+          lineNumber: 205
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1333,7 +1335,7 @@ function (_React$Component) {
         className: classes.innerGridHeightAdjust,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 199
+          lineNumber: 206
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1341,21 +1343,20 @@ function (_React$Component) {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 200
+          lineNumber: 207
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 201
+          lineNumber: 208
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_14___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_BorderColor__WEBPACK_IMPORTED_MODULE_15___default.a, {
         className: classes.icon,
-        color: "primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 202
+          lineNumber: 209
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1365,7 +1366,7 @@ function (_React$Component) {
         container: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 205
+          lineNumber: 212
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1376,7 +1377,7 @@ function (_React$Component) {
         spacing: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 206
+          lineNumber: 213
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1384,7 +1385,7 @@ function (_React$Component) {
         xs: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 207
+          lineNumber: 214
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1394,20 +1395,20 @@ function (_React$Component) {
         variant: "h6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 208
+          lineNumber: 215
         },
         __self: this
-      }, "Service Three"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      }, "Graphic & Logo Design"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 211
+          lineNumber: 218
         },
         __self: this
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      }, "Web Design, Social Posts, Email layouts and assets, Pring Marketing Material, Logos, Signage"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 216
+          lineNumber: 223
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -1415,11 +1416,10 @@ function (_React$Component) {
           marginTop: '128%'
         },
         variant: "outlined",
-        color: "primary",
         onClick: this.handleClickOpenThree,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 217
+          lineNumber: 224
         },
         __self: this
       }, "learn more"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalThree__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -1427,7 +1427,7 @@ function (_React$Component) {
         onClose: this.handleCloseThree,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 220
+          lineNumber: 227
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1437,7 +1437,7 @@ function (_React$Component) {
         md: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 230
+          lineNumber: 243
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1445,7 +1445,7 @@ function (_React$Component) {
         className: classes.innerGridHeightAdjust,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 231
+          lineNumber: 244
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1453,21 +1453,20 @@ function (_React$Component) {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 232
+          lineNumber: 245
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 233
+          lineNumber: 246
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_14___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_FontDownload__WEBPACK_IMPORTED_MODULE_16___default.a, {
         className: classes.icon,
-        color: "primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 234
+          lineNumber: 247
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1477,7 +1476,7 @@ function (_React$Component) {
         container: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 237
+          lineNumber: 250
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1488,7 +1487,7 @@ function (_React$Component) {
         spacing: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 238
+          lineNumber: 251
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1496,7 +1495,7 @@ function (_React$Component) {
         xs: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 239
+          lineNumber: 252
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1506,20 +1505,20 @@ function (_React$Component) {
         variant: "h6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 240
+          lineNumber: 253
         },
         __self: this
-      }, "Service Four"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      }, "Content Management"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 243
+          lineNumber: 256
         },
         __self: this
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      }, "Create: Articles, Blogs, Infographis, Social Media Posts, Webinars and more."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 248
+          lineNumber: 261
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -1527,11 +1526,10 @@ function (_React$Component) {
           marginTop: '128%'
         },
         variant: "outlined",
-        color: "primary",
         onClick: this.handleClickOpenFour,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 249
+          lineNumber: 262
         },
         __self: this
       }, "learn more"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalFour__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -1539,7 +1537,7 @@ function (_React$Component) {
         onClose: this.handleCloseFour,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 252
+          lineNumber: 265
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1549,7 +1547,7 @@ function (_React$Component) {
         md: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 260
+          lineNumber: 276
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1557,7 +1555,7 @@ function (_React$Component) {
         className: classes.innerGridHeightAdjust,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 261
+          lineNumber: 277
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1565,21 +1563,20 @@ function (_React$Component) {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 262
+          lineNumber: 278
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 263
+          lineNumber: 279
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_14___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_PersonAdd__WEBPACK_IMPORTED_MODULE_17___default.a, {
         className: classes.icon,
-        color: "primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 264
+          lineNumber: 280
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1589,7 +1586,7 @@ function (_React$Component) {
         container: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 267
+          lineNumber: 283
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1600,7 +1597,7 @@ function (_React$Component) {
         spacing: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 268
+          lineNumber: 284
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1608,7 +1605,7 @@ function (_React$Component) {
         xs: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 269
+          lineNumber: 285
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1618,20 +1615,20 @@ function (_React$Component) {
         variant: "h6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 270
+          lineNumber: 286
         },
         __self: this
-      }, "Service Five"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      }, "Social Media"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 273
+          lineNumber: 289
         },
         __self: this
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      }, "Pinterest, Instagram, Facebook, Twitter"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 278
+          lineNumber: 294
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -1639,11 +1636,10 @@ function (_React$Component) {
           marginTop: '128%'
         },
         variant: "outlined",
-        color: "primary",
         onClick: this.handleClickOpenFive,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 279
+          lineNumber: 295
         },
         __self: this
       }, "learn more"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalFive__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -1651,7 +1647,7 @@ function (_React$Component) {
         onClose: this.handleCloseFive,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 282
+          lineNumber: 298
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1661,7 +1657,7 @@ function (_React$Component) {
         md: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 290
+          lineNumber: 309
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1669,7 +1665,7 @@ function (_React$Component) {
         className: classes.innerGridHeightAdjust,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 291
+          lineNumber: 310
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1677,21 +1673,20 @@ function (_React$Component) {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 292
+          lineNumber: 311
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 293
+          lineNumber: 312
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_14___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_18___default.a, {
         className: classes.icon,
-        color: "primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 294
+          lineNumber: 313
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1701,7 +1696,7 @@ function (_React$Component) {
         container: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 297
+          lineNumber: 316
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1712,7 +1707,7 @@ function (_React$Component) {
         spacing: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 298
+          lineNumber: 317
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1720,7 +1715,7 @@ function (_React$Component) {
         xs: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 299
+          lineNumber: 318
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1730,20 +1725,20 @@ function (_React$Component) {
         variant: "h6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 300
+          lineNumber: 319
         },
         __self: this
-      }, "Service Six"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      }, "Search Engine Optimization and PPC"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 303
+          lineNumber: 322
         },
         __self: this
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      }, "We can search engine optimze your existing website, or manage your PPC campaigns to maximize returns."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
         item: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 308
+          lineNumber: 327
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -1751,11 +1746,10 @@ function (_React$Component) {
           marginTop: '128%'
         },
         variant: "outlined",
-        color: "primary",
         onClick: this.handleClickOpenSix,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 309
+          lineNumber: 328
         },
         __self: this
       }, "learn more"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_serviceModals_ServiceModalSix__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -1763,7 +1757,7 @@ function (_React$Component) {
         onClose: this.handleCloseSix,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 312
+          lineNumber: 331
         },
         __self: this
       })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1772,7 +1766,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 323
+          lineNumber: 342
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1783,7 +1777,7 @@ function (_React$Component) {
         color: "inherit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 324
+          lineNumber: 343
         },
         __self: this
       }, "Section Three")));
@@ -3600,25 +3594,36 @@ module.exports = require("@material-ui/core/styles");
 
 /***/ }),
 
-/***/ "@material-ui/icons/AssignmentTurnedIn":
-/*!********************************************************!*\
-  !*** external "@material-ui/icons/AssignmentTurnedIn" ***!
-  \********************************************************/
+/***/ "@material-ui/icons/BorderColor":
+/*!*************************************************!*\
+  !*** external "@material-ui/icons/BorderColor" ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/icons/AssignmentTurnedIn");
+module.exports = require("@material-ui/icons/BorderColor");
 
 /***/ }),
 
-/***/ "@material-ui/icons/HourglassEmpty":
-/*!****************************************************!*\
-  !*** external "@material-ui/icons/HourglassEmpty" ***!
-  \****************************************************/
+/***/ "@material-ui/icons/Email":
+/*!*******************************************!*\
+  !*** external "@material-ui/icons/Email" ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/icons/HourglassEmpty");
+module.exports = require("@material-ui/icons/Email");
+
+/***/ }),
+
+/***/ "@material-ui/icons/FontDownload":
+/*!**************************************************!*\
+  !*** external "@material-ui/icons/FontDownload" ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/FontDownload");
 
 /***/ }),
 
@@ -3630,6 +3635,39 @@ module.exports = require("@material-ui/icons/HourglassEmpty");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/Menu");
+
+/***/ }),
+
+/***/ "@material-ui/icons/PersonAdd":
+/*!***********************************************!*\
+  !*** external "@material-ui/icons/PersonAdd" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/PersonAdd");
+
+/***/ }),
+
+/***/ "@material-ui/icons/Search":
+/*!********************************************!*\
+  !*** external "@material-ui/icons/Search" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/Search");
+
+/***/ }),
+
+/***/ "@material-ui/icons/Web":
+/*!*****************************************!*\
+  !*** external "@material-ui/icons/Web" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/Web");
 
 /***/ }),
 
