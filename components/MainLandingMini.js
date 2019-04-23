@@ -10,6 +10,7 @@ const styles = theme => ({
 
     root: {
       flexGrow: 1,
+      height: '100px'
     }
 
   });
@@ -21,7 +22,7 @@ class MainLandingMini extends React.Component {
     
         return (
           <div className={classes.root}>
-            <Typography>  Main Landing Mini  </Typography>
+            <Typography>Main Landing Mini</Typography>
           </div>
         );
     }
