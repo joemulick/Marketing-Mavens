@@ -4,7 +4,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Navbar from '../components/Navbar';
 import NavbarHeightSpacer from '../components/NavbarHeightSpacer'
 import Footer from '../components/Footer';
-// import MainFeatures from '../components/MainFeatures';
+import MainFeatures from '../components/MainFeatures';
+import MainLandingMini from '../components/MainLandingMini';
 import ServicesSection from '../components/ServicesSection';
 import OurServicesAndForm from '../components/OurServicesAndForm';
 
@@ -46,7 +47,8 @@ class Index extends React.Component {
           <Navbar />
           {/* <NavbarHeightSpacer /> */}
             
-          {/* <MainFeatures /> */}
+          <MainFeatures />
+          <MainLandingMini />
 
           <ServicesSection />
 
