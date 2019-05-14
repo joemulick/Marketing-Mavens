@@ -4,4 +4,4 @@ To run --
 
 Clone Repo -- 
 
-npm i && rpm run dev
+npm i && npm run dev
